@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2026
+VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vs_debug", "vs_debug\vs_debug.vcxproj", "{FD62D848-58CC-438B-9FE8-8B7C677315B6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cout重定向", "vs_debug\vs_debug.vcxproj", "{FD62D848-58CC-438B-9FE8-8B7C677315B6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ah_子算法", "ah_子算法\ah_子算法.vcxproj", "{5A2AC18B-BCF4-4CC0-BCD4-D396DDF70818}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,14 @@ Global
 		{FD62D848-58CC-438B-9FE8-8B7C677315B6}.Release|x64.Build.0 = Release|x64
 		{FD62D848-58CC-438B-9FE8-8B7C677315B6}.Release|x86.ActiveCfg = Release|Win32
 		{FD62D848-58CC-438B-9FE8-8B7C677315B6}.Release|x86.Build.0 = Release|Win32
+		{5A2AC18B-BCF4-4CC0-BCD4-D396DDF70818}.Debug|x64.ActiveCfg = Debug|x64
+		{5A2AC18B-BCF4-4CC0-BCD4-D396DDF70818}.Debug|x64.Build.0 = Debug|x64
+		{5A2AC18B-BCF4-4CC0-BCD4-D396DDF70818}.Debug|x86.ActiveCfg = Debug|Win32
+		{5A2AC18B-BCF4-4CC0-BCD4-D396DDF70818}.Debug|x86.Build.0 = Debug|Win32
+		{5A2AC18B-BCF4-4CC0-BCD4-D396DDF70818}.Release|x64.ActiveCfg = Release|x64
+		{5A2AC18B-BCF4-4CC0-BCD4-D396DDF70818}.Release|x64.Build.0 = Release|x64
+		{5A2AC18B-BCF4-4CC0-BCD4-D396DDF70818}.Release|x86.ActiveCfg = Release|Win32
+		{5A2AC18B-BCF4-4CC0-BCD4-D396DDF70818}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
