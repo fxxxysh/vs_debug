@@ -29,5 +29,11 @@
     <ClCompile Include="ah_子算法.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="kfifo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="check_sensor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

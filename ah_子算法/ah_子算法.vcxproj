@@ -148,6 +148,8 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ah_子算法.cpp" />
+    <ClCompile Include="check_sensor.cpp" />
+    <ClCompile Include="kfifo.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
