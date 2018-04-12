@@ -3,7 +3,7 @@
 
 void kfifo_test()
 {
-	uint8_t data[256] = { 0 };
+	uint8_t data[512] = { 0 };
 
 	for (int i = 0; i < sizeof(data); i++)
 	{
@@ -14,26 +14,11 @@ void kfifo_test()
 	printf("FIFO创建成功，FIFO大小：%d，使用大小：%d，剩余大小：%d\n",
 		kfifo->Size(), kfifo->Len(), kfifo->Avail());
 
-	if (kfifo->IsFull() == true)
-	{
-		printf("FIFO满了！！！\n");
-	}
-	else
-	{
-		printf("FIFO没满！！！\n");
-	}
+	int write_len = kfifo->push(data, 200);
+	printf("写入大小 %d\r\n", write_len);
 
-	if (kfifo->IsEmpty() == true)
-	{
-		printf("FIFO空了！！！\n");
-	}
-	else
-	{
-		printf("FIFO没空！！！\n");
-	}
-
-	printf("\n");
-
+	int read_len = kfifo->pop(data, 300);
+	printf("读取大小 %d\r\n", read_len);
 	if(1)
 	{
 		{
