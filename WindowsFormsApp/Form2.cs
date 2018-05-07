@@ -25,6 +25,9 @@ namespace WindowsFormsApp
             //dp1.Text = "Panel 1";
 
             //dockManager1 = true;
+            //navBarControl2.BorderStyle 
+            //navBarControl2.PaintStyleName = "UltraFlatExplorerBarView";
+
         }
 
         int t = 0;
@@ -43,6 +46,11 @@ namespace WindowsFormsApp
         private void tabPane2_QueryControl(object sender, DevExpress.XtraBars.Navigation.QueryControlEventArgs e)
         {
             e.Control = new Label() { BackColor = Color.Teal, Dock = DockStyle.Fill, Text = "Sample Content", AutoSize = false, TextAlign = ContentAlignment.MiddleCenter };
+        }
+
+        private void navBarControl1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
