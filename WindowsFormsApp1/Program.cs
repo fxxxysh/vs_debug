@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.UserSkins;
+using DevExpress.Skins;
 
-namespace WindowsFormsApp
+namespace WindowsFormsApp1
 {
     static class Program
     {
@@ -18,7 +20,8 @@ namespace WindowsFormsApp
             Application.SetCompatibleTextRenderingDefault(false);
             DevExpress.Skins.SkinManager.EnableFormSkins();
             DevExpress.UserSkins.BonusSkins.Register();
-            Application.Run(new Form5());
+            //Application.Run(new Form1()); 
+            Application.Run(new XtraForm1()); 
         }
     }
 }

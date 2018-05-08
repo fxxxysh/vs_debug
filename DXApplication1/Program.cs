@@ -1,24 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using DevExpress.UserSkins;
+using DevExpress.Skins;
+using DevExpress.LookAndFeel;
 
-namespace WindowsFormsApp
+namespace DXApplication1
 {
     static class Program
     {
         /// <summary>
-        /// 应用程序的主入口点。
+        /// The main entry point for the application.
         /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            DevExpress.Skins.SkinManager.EnableFormSkins();
-            DevExpress.UserSkins.BonusSkins.Register();
-            Application.Run(new Form5());
+
+            BonusSkins.Register();
+            SkinManager.EnableFormSkins();
+            UserLookAndFeel.Default.SetSkinStyle("DevExpress Style");
+            Application.Run(new Form1());
         }
     }
 }
