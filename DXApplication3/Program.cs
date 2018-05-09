@@ -21,7 +21,7 @@ namespace DXApplication3
 
             BonusSkins.Register();
             SkinManager.EnableFormSkins();
-            Application.Run(new main_ribbonControl());//Form1
+            Application.Run(new tools());//Form1
         }
     }
 }

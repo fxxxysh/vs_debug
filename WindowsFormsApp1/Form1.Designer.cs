@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.navBarControl1 = new DevExpress.XtraNavBar.NavBarControl();
+            this.navBarGroup4 = new DevExpress.XtraNavBar.NavBarGroup();
+            this.navBarGroupControlContainer1 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
             this.navBarGroup1 = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarItem1 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem2 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem3 = new DevExpress.XtraNavBar.NavBarItem();
-            this.navBarGroupControlContainer1 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
             this.navBarGroup2 = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarItem4 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem5 = new DevExpress.XtraNavBar.NavBarItem();
@@ -42,7 +43,6 @@
             this.navBarItem7 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarSeparatorItem1 = new DevExpress.XtraNavBar.NavBarSeparatorItem();
             this.navBarItem8 = new DevExpress.XtraNavBar.NavBarItem();
-            this.navBarGroup4 = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarControl2 = new DevExpress.XtraNavBar.NavBarControl();
             this.navBarGroup5 = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarItem9 = new DevExpress.XtraNavBar.NavBarItem();
@@ -113,6 +113,23 @@
             this.navBarControl1.Text = "navBarControl1";
             this.navBarControl1.View = new DevExpress.XtraNavBar.ViewInfo.StandardSkinNavigationPaneViewInfoRegistrator("Office 2016 Colorful");
             // 
+            // navBarGroup4
+            // 
+            this.navBarGroup4.Caption = "navBarGroup4";
+            this.navBarGroup4.ControlContainer = this.navBarGroupControlContainer1;
+            this.navBarGroup4.Expanded = true;
+            this.navBarGroup4.GroupClientHeight = 80;
+            this.navBarGroup4.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
+            this.navBarGroup4.Name = "navBarGroup4";
+            // 
+            // navBarGroupControlContainer1
+            // 
+            this.navBarGroupControlContainer1.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.navBarGroupControlContainer1.Appearance.Options.UseBackColor = true;
+            this.navBarGroupControlContainer1.Name = "navBarGroupControlContainer1";
+            this.navBarGroupControlContainer1.Size = new System.Drawing.Size(215, 263);
+            this.navBarGroupControlContainer1.TabIndex = 0;
+            // 
             // navBarGroup1
             // 
             this.navBarGroup1.Caption = "navBarGroup1";
@@ -136,14 +153,6 @@
             // 
             this.navBarItem3.Caption = "navBarItem3";
             this.navBarItem3.Name = "navBarItem3";
-            // 
-            // navBarGroupControlContainer1
-            // 
-            this.navBarGroupControlContainer1.Appearance.BackColor = System.Drawing.SystemColors.Control;
-            this.navBarGroupControlContainer1.Appearance.Options.UseBackColor = true;
-            this.navBarGroupControlContainer1.Name = "navBarGroupControlContainer1";
-            this.navBarGroupControlContainer1.Size = new System.Drawing.Size(215, 263);
-            this.navBarGroupControlContainer1.TabIndex = 0;
             // 
             // navBarGroup2
             // 
@@ -194,15 +203,6 @@
             // 
             this.navBarItem8.Caption = "navBarItem8";
             this.navBarItem8.Name = "navBarItem8";
-            // 
-            // navBarGroup4
-            // 
-            this.navBarGroup4.Caption = "navBarGroup4";
-            this.navBarGroup4.ControlContainer = this.navBarGroupControlContainer1;
-            this.navBarGroup4.Expanded = true;
-            this.navBarGroup4.GroupClientHeight = 80;
-            this.navBarGroup4.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
-            this.navBarGroup4.Name = "navBarGroup4";
             // 
             // navBarControl2
             // 
@@ -452,6 +452,7 @@
             this.navBarGroup13});
             this.navBarControl4.Location = new System.Drawing.Point(732, 0);
             this.navBarControl4.Name = "navBarControl4";
+            this.navBarControl4.OptionsNavPane.ExpandedWidth = 140;
             this.navBarControl4.PaintStyleKind = DevExpress.XtraNavBar.NavBarViewKind.NavigationPane;
             this.navBarControl4.Size = new System.Drawing.Size(140, 492);
             this.navBarControl4.TabIndex = 3;
