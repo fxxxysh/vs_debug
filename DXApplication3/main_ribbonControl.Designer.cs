@@ -30,32 +30,32 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(tools));
-            DevExpress.Utils.SuperToolTip superToolTip3 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem3 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SuperToolTip superToolTip4 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipItem toolTipItem4 = new DevExpress.Utils.ToolTipItem();
-            DevExpress.Utils.SimpleContextButton simpleContextButton7 = new DevExpress.Utils.SimpleContextButton();
-            DevExpress.Utils.SimpleContextButton simpleContextButton8 = new DevExpress.Utils.SimpleContextButton();
-            DevExpress.Utils.SimpleContextButton simpleContextButton9 = new DevExpress.Utils.SimpleContextButton();
-            DevExpress.Utils.SimpleContextButton simpleContextButton10 = new DevExpress.Utils.SimpleContextButton();
-            DevExpress.Utils.SimpleContextButton simpleContextButton11 = new DevExpress.Utils.SimpleContextButton();
-            DevExpress.Utils.SimpleContextButton simpleContextButton12 = new DevExpress.Utils.SimpleContextButton();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace11 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace12 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace13 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace14 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace15 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace16 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace17 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace18 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace19 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotChannelTrace plotChannelTrace20 = new Iocomp.Classes.PlotChannelTrace();
-            Iocomp.Classes.PlotDataCursorChannels plotDataCursorChannels2 = new Iocomp.Classes.PlotDataCursorChannels();
-            Iocomp.Classes.PlotDataView plotDataView2 = new Iocomp.Classes.PlotDataView();
-            Iocomp.Classes.PlotLabelBasic plotLabelBasic2 = new Iocomp.Classes.PlotLabelBasic();
-            Iocomp.Classes.PlotLegendBasic plotLegendBasic2 = new Iocomp.Classes.PlotLegendBasic();
-            Iocomp.Classes.PlotXAxis plotXAxis2 = new Iocomp.Classes.PlotXAxis();
-            Iocomp.Classes.PlotYAxis plotYAxis2 = new Iocomp.Classes.PlotYAxis();
+            DevExpress.Utils.SuperToolTip superToolTip9 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem9 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SuperToolTip superToolTip10 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipItem toolTipItem10 = new DevExpress.Utils.ToolTipItem();
+            DevExpress.Utils.SimpleContextButton simpleContextButton25 = new DevExpress.Utils.SimpleContextButton();
+            DevExpress.Utils.SimpleContextButton simpleContextButton26 = new DevExpress.Utils.SimpleContextButton();
+            DevExpress.Utils.SimpleContextButton simpleContextButton27 = new DevExpress.Utils.SimpleContextButton();
+            DevExpress.Utils.SimpleContextButton simpleContextButton28 = new DevExpress.Utils.SimpleContextButton();
+            DevExpress.Utils.SimpleContextButton simpleContextButton29 = new DevExpress.Utils.SimpleContextButton();
+            DevExpress.Utils.SimpleContextButton simpleContextButton30 = new DevExpress.Utils.SimpleContextButton();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace41 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace42 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace43 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace44 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace45 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace46 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace47 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace48 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace49 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotChannelTrace plotChannelTrace50 = new Iocomp.Classes.PlotChannelTrace();
+            Iocomp.Classes.PlotDataCursorChannels plotDataCursorChannels5 = new Iocomp.Classes.PlotDataCursorChannels();
+            Iocomp.Classes.PlotDataView plotDataView5 = new Iocomp.Classes.PlotDataView();
+            Iocomp.Classes.PlotLabelBasic plotLabelBasic5 = new Iocomp.Classes.PlotLabelBasic();
+            Iocomp.Classes.PlotLegendBasic plotLegendBasic5 = new Iocomp.Classes.PlotLegendBasic();
+            Iocomp.Classes.PlotXAxis plotXAxis5 = new Iocomp.Classes.PlotXAxis();
+            Iocomp.Classes.PlotYAxis plotYAxis5 = new Iocomp.Classes.PlotYAxis();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
@@ -95,6 +95,11 @@
             this.barEditItem9 = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemSpinEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit();
             this.barButtonItem10 = new DevExpress.XtraBars.BarButtonItem();
+            this.barStaticItem2 = new DevExpress.XtraBars.BarStaticItem();
+            this.barEditItem10 = new DevExpress.XtraBars.BarEditItem();
+            this.repositoryItemHypertextLabel1 = new DevExpress.XtraEditors.Repository.RepositoryItemHypertextLabel();
+            this.barEditItem11 = new DevExpress.XtraBars.BarEditItem();
+            this.repositoryItemTextEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemTextEdit();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup5 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -119,6 +124,9 @@
             this.navBarGroupControlContainer1 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
+            this.dropDownButton1 = new DevExpress.XtraEditors.DropDownButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.checkButton1 = new DevExpress.XtraEditors.CheckButton();
             this.navBarControl1 = new DevExpress.XtraNavBar.NavBarControl();
             this.navBarGroup2 = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarGroupControlContainer3 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
@@ -191,11 +199,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemHypertextLabel1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl2)).BeginInit();
             this.navBarControl2.SuspendLayout();
             this.navBarGroupControlContainer1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
+            this.panelControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
             this.navBarControl1.SuspendLayout();
             this.navBarGroupControlContainer3.SuspendLayout();
@@ -209,11 +220,10 @@
             // 
             // defaultLookAndFeel1
             // 
-            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2016 Dark";
+            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2013 Dark Gray";
             // 
             // ribbonControl1
             // 
-            this.ribbonControl1.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.Teal;
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
@@ -243,9 +253,12 @@
             this.barButtonItem9,
             this.barEditItem8,
             this.barEditItem9,
-            this.barButtonItem10});
+            this.barButtonItem10,
+            this.barStaticItem2,
+            this.barEditItem10,
+            this.barEditItem11});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 27;
+            this.ribbonControl1.MaxItemId = 31;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1,
@@ -265,10 +278,12 @@
             this.repositoryItemComboBox3,
             this.repositoryItemComboBox4,
             this.repositoryItemSpinEdit1,
-            this.repositoryItemSpinEdit2});
+            this.repositoryItemSpinEdit2,
+            this.repositoryItemHypertextLabel1,
+            this.repositoryItemTextEdit2});
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(1165, 150);
+            this.ribbonControl1.Size = new System.Drawing.Size(1165, 151);
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
             // 
@@ -284,9 +299,9 @@
             this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
             this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
             this.barButtonItem2.Name = "barButtonItem2";
-            toolTipItem3.Text = "全屏";
-            superToolTip3.Items.Add(toolTipItem3);
-            this.barButtonItem2.SuperTip = superToolTip3;
+            toolTipItem9.Text = "全屏";
+            superToolTip9.Items.Add(toolTipItem9);
+            this.barButtonItem2.SuperTip = superToolTip9;
             this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
             // 
             // barButtonItem3
@@ -301,9 +316,9 @@
             this.barButtonItem4.Id = 1;
             this.barButtonItem4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
             this.barButtonItem4.Name = "barButtonItem4";
-            toolTipItem4.Text = "菜单隐藏";
-            superToolTip4.Items.Add(toolTipItem4);
-            this.barButtonItem4.SuperTip = superToolTip4;
+            toolTipItem10.Text = "菜单隐藏";
+            superToolTip10.Items.Add(toolTipItem10);
+            this.barButtonItem4.SuperTip = superToolTip10;
             this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
             // 
             // barButtonItem5
@@ -430,30 +445,30 @@
             this.repositoryItemComboBox1.AutoHeight = false;
             this.repositoryItemComboBox1.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            simpleContextButton7.Caption = "simpleContextButton1";
-            simpleContextButton7.Id = new System.Guid("ecffa201-b248-4b8e-b172-9e6f94be5b7e");
-            simpleContextButton7.Name = "simpleContextButton1";
-            simpleContextButton8.Caption = "simpleContextButton2";
-            simpleContextButton8.Id = new System.Guid("972a481e-f0a4-4154-a3f3-a4eda15da1a0");
-            simpleContextButton8.Name = "simpleContextButton2";
-            simpleContextButton9.Caption = "simpleContextButton3";
-            simpleContextButton9.Id = new System.Guid("6ab5301a-091c-4547-8667-934445bef987");
-            simpleContextButton9.Name = "simpleContextButton3";
-            simpleContextButton10.Caption = "simpleContextButton4";
-            simpleContextButton10.Id = new System.Guid("1cfd8745-49ec-4483-8042-4a1f78c7732f");
-            simpleContextButton10.Name = "simpleContextButton4";
-            simpleContextButton11.Caption = "simpleContextButton5";
-            simpleContextButton11.Id = new System.Guid("264afbb5-8d04-4c0c-aa2b-889265185bb9");
-            simpleContextButton11.Name = "simpleContextButton5";
-            simpleContextButton12.Caption = "simpleContextButton6";
-            simpleContextButton12.Id = new System.Guid("bca8c89b-27de-49b8-a240-6730f1d53511");
-            simpleContextButton12.Name = "simpleContextButton6";
-            this.repositoryItemComboBox1.ContextButtons.Add(simpleContextButton7);
-            this.repositoryItemComboBox1.ContextButtons.Add(simpleContextButton8);
-            this.repositoryItemComboBox1.ContextButtons.Add(simpleContextButton9);
-            this.repositoryItemComboBox1.ContextButtons.Add(simpleContextButton10);
-            this.repositoryItemComboBox1.ContextButtons.Add(simpleContextButton11);
-            this.repositoryItemComboBox1.ContextButtons.Add(simpleContextButton12);
+            simpleContextButton25.Caption = "simpleContextButton1";
+            simpleContextButton25.Id = new System.Guid("ecffa201-b248-4b8e-b172-9e6f94be5b7e");
+            simpleContextButton25.Name = "simpleContextButton1";
+            simpleContextButton26.Caption = "simpleContextButton2";
+            simpleContextButton26.Id = new System.Guid("972a481e-f0a4-4154-a3f3-a4eda15da1a0");
+            simpleContextButton26.Name = "simpleContextButton2";
+            simpleContextButton27.Caption = "simpleContextButton3";
+            simpleContextButton27.Id = new System.Guid("6ab5301a-091c-4547-8667-934445bef987");
+            simpleContextButton27.Name = "simpleContextButton3";
+            simpleContextButton28.Caption = "simpleContextButton4";
+            simpleContextButton28.Id = new System.Guid("1cfd8745-49ec-4483-8042-4a1f78c7732f");
+            simpleContextButton28.Name = "simpleContextButton4";
+            simpleContextButton29.Caption = "simpleContextButton5";
+            simpleContextButton29.Id = new System.Guid("264afbb5-8d04-4c0c-aa2b-889265185bb9");
+            simpleContextButton29.Name = "simpleContextButton5";
+            simpleContextButton30.Caption = "simpleContextButton6";
+            simpleContextButton30.Id = new System.Guid("bca8c89b-27de-49b8-a240-6730f1d53511");
+            simpleContextButton30.Name = "simpleContextButton6";
+            this.repositoryItemComboBox1.ContextButtons.Add(simpleContextButton25);
+            this.repositoryItemComboBox1.ContextButtons.Add(simpleContextButton26);
+            this.repositoryItemComboBox1.ContextButtons.Add(simpleContextButton27);
+            this.repositoryItemComboBox1.ContextButtons.Add(simpleContextButton28);
+            this.repositoryItemComboBox1.ContextButtons.Add(simpleContextButton29);
+            this.repositoryItemComboBox1.ContextButtons.Add(simpleContextButton30);
             this.repositoryItemComboBox1.DropDownRows = 12;
             this.repositoryItemComboBox1.Items.AddRange(new object[] {
             "COM1",
@@ -581,6 +596,35 @@
             this.barButtonItem10.Id = 26;
             this.barButtonItem10.Name = "barButtonItem10";
             // 
+            // barStaticItem2
+            // 
+            this.barStaticItem2.Caption = "barStaticItem2";
+            this.barStaticItem2.Id = 28;
+            this.barStaticItem2.Name = "barStaticItem2";
+            // 
+            // barEditItem10
+            // 
+            this.barEditItem10.Caption = "barEditItem10";
+            this.barEditItem10.Edit = this.repositoryItemHypertextLabel1;
+            this.barEditItem10.Id = 29;
+            this.barEditItem10.Name = "barEditItem10";
+            // 
+            // repositoryItemHypertextLabel1
+            // 
+            this.repositoryItemHypertextLabel1.Name = "repositoryItemHypertextLabel1";
+            // 
+            // barEditItem11
+            // 
+            this.barEditItem11.Caption = "barEditItem11";
+            this.barEditItem11.Edit = this.repositoryItemTextEdit2;
+            this.barEditItem11.Id = 30;
+            this.barEditItem11.Name = "barEditItem11";
+            // 
+            // repositoryItemTextEdit2
+            // 
+            this.repositoryItemTextEdit2.AutoHeight = false;
+            this.repositoryItemTextEdit2.Name = "repositoryItemTextEdit2";
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -620,11 +664,14 @@
             // ribbonPageGroup8
             // 
             this.ribbonPageGroup8.ItemLinks.Add(this.barEditItem5);
+            this.ribbonPageGroup8.ItemLinks.Add(this.barEditItem11);
             this.ribbonPageGroup8.Name = "ribbonPageGroup8";
             this.ribbonPageGroup8.Text = "ribbonPageGroup8";
             // 
             // ribbonPageGroup13
             // 
+            this.ribbonPageGroup13.ItemLinks.Add(this.barStaticItem2);
+            this.ribbonPageGroup13.ItemLinks.Add(this.barEditItem10);
             this.ribbonPageGroup13.Name = "ribbonPageGroup13";
             this.ribbonPageGroup13.Text = "ribbonPageGroup13";
             // 
@@ -706,6 +753,8 @@
             this.navBarControl2.Controls.Add(this.navBarGroupControlContainer2);
             this.navBarControl2.Controls.Add(this.navBarGroupControlContainer1);
             this.navBarControl2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.navBarControl2.ExplorerBarGroupInterval = 2;
+            this.navBarControl2.ExplorerBarGroupOuterIndent = 3;
             this.navBarControl2.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
             this.navBarGroup1,
             this.navBarGroup6,
@@ -719,14 +768,17 @@
             this.navBarSeparatorItem2,
             this.navBarItem16,
             this.navBarItem1});
-            this.navBarControl2.Location = new System.Drawing.Point(0, 150);
+            this.navBarControl2.LinkInterval = 4;
+            this.navBarControl2.Location = new System.Drawing.Point(0, 151);
             this.navBarControl2.Name = "navBarControl2";
             this.navBarControl2.OptionsNavPane.ExpandedWidth = 240;
             this.navBarControl2.PaintStyleKind = DevExpress.XtraNavBar.NavBarViewKind.NavigationPane;
-            this.navBarControl2.Size = new System.Drawing.Size(240, 546);
-            this.navBarControl2.TabIndex = 3;
+            this.navBarControl2.Size = new System.Drawing.Size(240, 545);
+            this.navBarControl2.TabIndex = 1;
             this.navBarControl2.Text = "navBarControl2";
             this.navBarControl2.View = new DevExpress.XtraNavBar.ViewInfo.StandardSkinNavigationPaneViewInfoRegistrator("Office 2016 Dark");
+            this.navBarControl2.NavPaneStateChanged += new System.EventHandler(this.navBarControl2_NavPaneStateChanged);
+            this.navBarControl2.ActiveGroupChanged += new DevExpress.XtraNavBar.NavBarGroupEventHandler(this.navBarControl2_ActiveGroupChanged);
             // 
             // navBarGroup1
             // 
@@ -741,6 +793,7 @@
             this.navBarGroup1.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem1)});
             this.navBarGroup1.Name = "navBarGroup1";
+            this.navBarGroup1.TopVisibleLinkIndex = 1;
             // 
             // navBarGroupControlContainer1
             // 
@@ -748,7 +801,7 @@
             this.navBarGroupControlContainer1.Appearance.Options.UseBackColor = true;
             this.navBarGroupControlContainer1.Controls.Add(this.panel2);
             this.navBarGroupControlContainer1.Name = "navBarGroupControlContainer1";
-            this.navBarGroupControlContainer1.Size = new System.Drawing.Size(240, 317);
+            this.navBarGroupControlContainer1.Size = new System.Drawing.Size(240, 353);
             this.navBarGroupControlContainer1.TabIndex = 1;
             // 
             // panel2
@@ -768,12 +821,40 @@
             this.panelControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelControl1.Location = new System.Drawing.Point(0, 227);
+            this.panelControl1.Controls.Add(this.dropDownButton1);
+            this.panelControl1.Controls.Add(this.simpleButton1);
+            this.panelControl1.Controls.Add(this.checkButton1);
+            this.panelControl1.Location = new System.Drawing.Point(0, 221);
             this.panelControl1.LookAndFeel.UseDefaultLookAndFeel = false;
             this.panelControl1.Margin = new System.Windows.Forms.Padding(0);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(240, 72);
+            this.panelControl1.Size = new System.Drawing.Size(240, 78);
             this.panelControl1.TabIndex = 2;
+            // 
+            // dropDownButton1
+            // 
+            this.dropDownButton1.Location = new System.Drawing.Point(12, 35);
+            this.dropDownButton1.MenuManager = this.ribbonControl1;
+            this.dropDownButton1.Name = "dropDownButton1";
+            this.dropDownButton1.Size = new System.Drawing.Size(135, 23);
+            this.dropDownButton1.TabIndex = 2;
+            this.dropDownButton1.Text = "dropDownButton1";
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(12, 6);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton1.TabIndex = 1;
+            this.simpleButton1.Text = "simpleButton1";
+            // 
+            // checkButton1
+            // 
+            this.checkButton1.Location = new System.Drawing.Point(131, 6);
+            this.checkButton1.Name = "checkButton1";
+            this.checkButton1.Size = new System.Drawing.Size(75, 23);
+            this.checkButton1.TabIndex = 0;
+            this.checkButton1.Text = "checkButton1";
             // 
             // navBarControl1
             // 
@@ -805,6 +886,7 @@
             this.navBarGroup2.Appearance.Options.UseFont = true;
             this.navBarGroup2.Caption = "navBarGroup2";
             this.navBarGroup2.ControlContainer = this.navBarGroupControlContainer3;
+            this.navBarGroup2.Expanded = true;
             this.navBarGroup2.GroupClientHeight = 250;
             this.navBarGroup2.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
             this.navBarGroup2.Name = "navBarGroup2";
@@ -820,6 +902,8 @@
             // 
             // checkedListBoxControl2
             // 
+            this.checkedListBoxControl2.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.checkedListBoxControl2.CheckStyle = DevExpress.XtraEditors.Controls.CheckStyles.Radio;
             this.checkedListBoxControl2.Cursor = System.Windows.Forms.Cursors.Default;
             this.checkedListBoxControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.checkedListBoxControl2.Items.AddRange(new DevExpress.XtraEditors.Controls.CheckedListBoxItem[] {
@@ -978,6 +1062,7 @@
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem13),
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem14)});
             this.navBarGroup6.Name = "navBarGroup6";
+            this.navBarGroup6.TopVisibleLinkIndex = 2;
             // 
             // navBarItem12
             // 
@@ -1004,6 +1089,8 @@
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarSeparatorItem2),
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem16)});
             this.navBarGroup7.Name = "navBarGroup7";
+            this.navBarGroup7.TopVisibleLinkIndex = 3;
+            this.navBarGroup7.ItemChanged += new System.EventHandler(this.navBarGroup7_ItemChanged);
             // 
             // navBarItem15
             // 
@@ -1041,155 +1128,155 @@
             this.wave_plot.AutoSize = false;
             this.wave_plot.Border.Margin = 1;
             this.wave_plot.Border.Style = Iocomp.Types.BorderStyleControl.None;
-            plotChannelTrace11.CanFocus = false;
-            plotChannelTrace11.Color = System.Drawing.Color.Red;
-            plotChannelTrace11.Markers.Size = 2;
-            plotChannelTrace11.MarkersTurnOffLimit = 0;
-            plotChannelTrace11.Name = "Channel 1";
-            plotChannelTrace11.SendXAxisTrackingData = false;
-            plotChannelTrace11.SendYAxisTrackingData = false;
-            plotChannelTrace11.TitleText = "CH1";
-            plotChannelTrace12.CanFocus = false;
-            plotChannelTrace12.Color = System.Drawing.Color.Blue;
-            plotChannelTrace12.Markers.Size = 2;
-            plotChannelTrace12.MarkersTurnOffLimit = 0;
-            plotChannelTrace12.Name = "Channel 2";
-            plotChannelTrace12.TitleText = "CH2";
-            plotChannelTrace13.CanFocus = false;
-            plotChannelTrace13.Color = System.Drawing.Color.Lime;
-            plotChannelTrace13.Markers.Size = 2;
-            plotChannelTrace13.MarkersTurnOffLimit = 0;
-            plotChannelTrace13.Name = "Channel 3";
-            plotChannelTrace13.TitleText = "CH3";
-            plotChannelTrace14.CanFocus = false;
-            plotChannelTrace14.Color = System.Drawing.Color.Yellow;
-            plotChannelTrace14.Markers.Size = 2;
-            plotChannelTrace14.MarkersTurnOffLimit = 0;
-            plotChannelTrace14.Name = "Channel 4";
-            plotChannelTrace14.TitleText = "CH4";
-            plotChannelTrace15.CanFocus = false;
-            plotChannelTrace15.Color = System.Drawing.Color.Aqua;
-            plotChannelTrace15.Markers.Size = 2;
-            plotChannelTrace15.MarkersTurnOffLimit = 0;
-            plotChannelTrace15.Name = "Channel 5";
-            plotChannelTrace15.TitleText = "CH5";
-            plotChannelTrace16.CanFocus = false;
-            plotChannelTrace16.Color = System.Drawing.Color.White;
-            plotChannelTrace16.Markers.Size = 2;
-            plotChannelTrace16.MarkersTurnOffLimit = 0;
-            plotChannelTrace16.Name = "Channel 6";
-            plotChannelTrace16.TitleText = "CH6";
-            plotChannelTrace17.CanFocus = false;
-            plotChannelTrace17.Color = System.Drawing.Color.Purple;
-            plotChannelTrace17.Markers.Size = 2;
-            plotChannelTrace17.MarkersTurnOffLimit = 0;
-            plotChannelTrace17.Name = "Channel 7";
-            plotChannelTrace17.TitleText = "CH7";
-            plotChannelTrace18.CanFocus = false;
-            plotChannelTrace18.Color = System.Drawing.Color.DeepSkyBlue;
-            plotChannelTrace18.Markers.Size = 2;
-            plotChannelTrace18.MarkersTurnOffLimit = 0;
-            plotChannelTrace18.Name = "Channel 8";
-            plotChannelTrace18.TitleText = "CH8";
-            plotChannelTrace19.CanFocus = false;
-            plotChannelTrace19.Color = System.Drawing.Color.LightSeaGreen;
-            plotChannelTrace19.Markers.Size = 2;
-            plotChannelTrace19.MarkersTurnOffLimit = 0;
-            plotChannelTrace19.Name = "Channel 9";
-            plotChannelTrace19.TitleText = "CH9";
-            plotChannelTrace20.CanFocus = false;
-            plotChannelTrace20.Color = System.Drawing.Color.OliveDrab;
-            plotChannelTrace20.Markers.Size = 2;
-            plotChannelTrace20.MarkersTurnOffLimit = 0;
-            plotChannelTrace20.Name = "Channel 10";
-            plotChannelTrace20.TitleText = "CH10";
-            this.wave_plot.Channels.Add(plotChannelTrace11);
-            this.wave_plot.Channels.Add(plotChannelTrace12);
-            this.wave_plot.Channels.Add(plotChannelTrace13);
-            this.wave_plot.Channels.Add(plotChannelTrace14);
-            this.wave_plot.Channels.Add(plotChannelTrace15);
-            this.wave_plot.Channels.Add(plotChannelTrace16);
-            this.wave_plot.Channels.Add(plotChannelTrace17);
-            this.wave_plot.Channels.Add(plotChannelTrace18);
-            this.wave_plot.Channels.Add(plotChannelTrace19);
-            this.wave_plot.Channels.Add(plotChannelTrace20);
+            plotChannelTrace41.CanFocus = false;
+            plotChannelTrace41.Color = System.Drawing.Color.Red;
+            plotChannelTrace41.Markers.Size = 2;
+            plotChannelTrace41.MarkersTurnOffLimit = 0;
+            plotChannelTrace41.Name = "Channel 1";
+            plotChannelTrace41.SendXAxisTrackingData = false;
+            plotChannelTrace41.SendYAxisTrackingData = false;
+            plotChannelTrace41.TitleText = "CH1";
+            plotChannelTrace42.CanFocus = false;
+            plotChannelTrace42.Color = System.Drawing.Color.Blue;
+            plotChannelTrace42.Markers.Size = 2;
+            plotChannelTrace42.MarkersTurnOffLimit = 0;
+            plotChannelTrace42.Name = "Channel 2";
+            plotChannelTrace42.TitleText = "CH2";
+            plotChannelTrace43.CanFocus = false;
+            plotChannelTrace43.Color = System.Drawing.Color.Lime;
+            plotChannelTrace43.Markers.Size = 2;
+            plotChannelTrace43.MarkersTurnOffLimit = 0;
+            plotChannelTrace43.Name = "Channel 3";
+            plotChannelTrace43.TitleText = "CH3";
+            plotChannelTrace44.CanFocus = false;
+            plotChannelTrace44.Color = System.Drawing.Color.Yellow;
+            plotChannelTrace44.Markers.Size = 2;
+            plotChannelTrace44.MarkersTurnOffLimit = 0;
+            plotChannelTrace44.Name = "Channel 4";
+            plotChannelTrace44.TitleText = "CH4";
+            plotChannelTrace45.CanFocus = false;
+            plotChannelTrace45.Color = System.Drawing.Color.Aqua;
+            plotChannelTrace45.Markers.Size = 2;
+            plotChannelTrace45.MarkersTurnOffLimit = 0;
+            plotChannelTrace45.Name = "Channel 5";
+            plotChannelTrace45.TitleText = "CH5";
+            plotChannelTrace46.CanFocus = false;
+            plotChannelTrace46.Color = System.Drawing.Color.White;
+            plotChannelTrace46.Markers.Size = 2;
+            plotChannelTrace46.MarkersTurnOffLimit = 0;
+            plotChannelTrace46.Name = "Channel 6";
+            plotChannelTrace46.TitleText = "CH6";
+            plotChannelTrace47.CanFocus = false;
+            plotChannelTrace47.Color = System.Drawing.Color.Purple;
+            plotChannelTrace47.Markers.Size = 2;
+            plotChannelTrace47.MarkersTurnOffLimit = 0;
+            plotChannelTrace47.Name = "Channel 7";
+            plotChannelTrace47.TitleText = "CH7";
+            plotChannelTrace48.CanFocus = false;
+            plotChannelTrace48.Color = System.Drawing.Color.DeepSkyBlue;
+            plotChannelTrace48.Markers.Size = 2;
+            plotChannelTrace48.MarkersTurnOffLimit = 0;
+            plotChannelTrace48.Name = "Channel 8";
+            plotChannelTrace48.TitleText = "CH8";
+            plotChannelTrace49.CanFocus = false;
+            plotChannelTrace49.Color = System.Drawing.Color.LightSeaGreen;
+            plotChannelTrace49.Markers.Size = 2;
+            plotChannelTrace49.MarkersTurnOffLimit = 0;
+            plotChannelTrace49.Name = "Channel 9";
+            plotChannelTrace49.TitleText = "CH9";
+            plotChannelTrace50.CanFocus = false;
+            plotChannelTrace50.Color = System.Drawing.Color.OliveDrab;
+            plotChannelTrace50.Markers.Size = 2;
+            plotChannelTrace50.MarkersTurnOffLimit = 0;
+            plotChannelTrace50.Name = "Channel 10";
+            plotChannelTrace50.TitleText = "CH10";
+            this.wave_plot.Channels.Add(plotChannelTrace41);
+            this.wave_plot.Channels.Add(plotChannelTrace42);
+            this.wave_plot.Channels.Add(plotChannelTrace43);
+            this.wave_plot.Channels.Add(plotChannelTrace44);
+            this.wave_plot.Channels.Add(plotChannelTrace45);
+            this.wave_plot.Channels.Add(plotChannelTrace46);
+            this.wave_plot.Channels.Add(plotChannelTrace47);
+            this.wave_plot.Channels.Add(plotChannelTrace48);
+            this.wave_plot.Channels.Add(plotChannelTrace49);
+            this.wave_plot.Channels.Add(plotChannelTrace50);
             this.wave_plot.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            plotDataCursorChannels2.CanFocus = false;
-            plotDataCursorChannels2.Hint.Fill.Brush.SolidColor = System.Drawing.Color.Transparent;
-            plotDataCursorChannels2.Hint.Fill.Brush.Visible = false;
-            plotDataCursorChannels2.Hint.Fill.Pen.Color = System.Drawing.SystemColors.ControlLightLight;
-            plotDataCursorChannels2.Hint.Fill.Pen.Visible = false;
-            plotDataCursorChannels2.Hint.Fill.Visible = false;
-            plotDataCursorChannels2.Hint.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            plotDataCursorChannels2.HitRegionSize = 0;
-            plotDataCursorChannels2.Name = "Data-Cursor";
-            plotDataCursorChannels2.PositionX = 0.2D;
-            plotDataCursorChannels2.TitleText = "Data-Cursor";
-            plotDataCursorChannels2.Window.Size = 3;
-            this.wave_plot.DataCursors.Add(plotDataCursorChannels2);
-            plotDataView2.CanFocus = false;
-            plotDataView2.Color = System.Drawing.Color.Gainsboro;
-            plotDataView2.DockMargin = 0;
-            plotDataView2.Name = "Data-View 1";
-            plotDataView2.TitleText = "Data-View 1";
-            this.wave_plot.DataViews.Add(plotDataView2);
+            plotDataCursorChannels5.CanFocus = false;
+            plotDataCursorChannels5.Hint.Fill.Brush.SolidColor = System.Drawing.Color.Transparent;
+            plotDataCursorChannels5.Hint.Fill.Brush.Visible = false;
+            plotDataCursorChannels5.Hint.Fill.Pen.Color = System.Drawing.SystemColors.ControlLightLight;
+            plotDataCursorChannels5.Hint.Fill.Pen.Visible = false;
+            plotDataCursorChannels5.Hint.Fill.Visible = false;
+            plotDataCursorChannels5.Hint.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            plotDataCursorChannels5.HitRegionSize = 0;
+            plotDataCursorChannels5.Name = "Data-Cursor";
+            plotDataCursorChannels5.PositionX = 0.2D;
+            plotDataCursorChannels5.TitleText = "Data-Cursor";
+            plotDataCursorChannels5.Window.Size = 3;
+            this.wave_plot.DataCursors.Add(plotDataCursorChannels5);
+            plotDataView5.CanFocus = false;
+            plotDataView5.Color = System.Drawing.Color.Gainsboro;
+            plotDataView5.DockMargin = 0;
+            plotDataView5.Name = "Data-View 1";
+            plotDataView5.TitleText = "Data-View 1";
+            this.wave_plot.DataViews.Add(plotDataView5);
             this.wave_plot.DefaultGridLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.wave_plot.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.wave_plot.ForeColor = System.Drawing.Color.Gainsboro;
-            plotLabelBasic2.DockOrder = 0;
-            plotLabelBasic2.Enabled = false;
-            plotLabelBasic2.Name = "Label 1";
-            plotLabelBasic2.Visible = false;
-            this.wave_plot.Labels.Add(plotLabelBasic2);
-            plotLegendBasic2.CanFocus = false;
-            plotLegendBasic2.DockAutoSizeAlignment = Iocomp.Types.PlotDockAutoSizeAlignment.Center;
-            plotLegendBasic2.DockDataViewName = "";
-            plotLegendBasic2.DockMargin = -5;
-            plotLegendBasic2.DockOrder = 0;
-            plotLegendBasic2.DockSide = Iocomp.Types.AlignmentQuadSide.Bottom;
-            plotLegendBasic2.Fill.Pen.Thickness = 0D;
-            plotLegendBasic2.MarginOuter = 0.35D;
-            plotLegendBasic2.Name = "Legend 1";
-            plotLegendBasic2.Spacing = 4D;
-            plotLegendBasic2.TitleText = "Legend 1";
-            plotLegendBasic2.Wrapping.Margin = 0D;
-            this.wave_plot.Legends.Add(plotLegendBasic2);
+            plotLabelBasic5.DockOrder = 0;
+            plotLabelBasic5.Enabled = false;
+            plotLabelBasic5.Name = "Label 1";
+            plotLabelBasic5.Visible = false;
+            this.wave_plot.Labels.Add(plotLabelBasic5);
+            plotLegendBasic5.CanFocus = false;
+            plotLegendBasic5.DockAutoSizeAlignment = Iocomp.Types.PlotDockAutoSizeAlignment.Center;
+            plotLegendBasic5.DockDataViewName = "";
+            plotLegendBasic5.DockMargin = -5;
+            plotLegendBasic5.DockOrder = 0;
+            plotLegendBasic5.DockSide = Iocomp.Types.AlignmentQuadSide.Bottom;
+            plotLegendBasic5.Fill.Pen.Thickness = 0D;
+            plotLegendBasic5.MarginOuter = 0.35D;
+            plotLegendBasic5.Name = "Legend 1";
+            plotLegendBasic5.Spacing = 4D;
+            plotLegendBasic5.TitleText = "Legend 1";
+            plotLegendBasic5.Wrapping.Margin = 0D;
+            this.wave_plot.Legends.Add(plotLegendBasic5);
             this.wave_plot.Location = new System.Drawing.Point(0, 26);
             this.wave_plot.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
             this.wave_plot.Name = "wave_plot";
-            this.wave_plot.Size = new System.Drawing.Size(924, 520);
+            this.wave_plot.Size = new System.Drawing.Size(924, 519);
             this.wave_plot.TabIndex = 1;
             this.wave_plot.UpdateFrameRate = 25D;
-            plotXAxis2.CanFocus = false;
-            plotXAxis2.DockOrder = 0;
-            plotXAxis2.Name = "X-Axis 1";
-            plotXAxis2.ScaleDisplay.Margin = 0;
-            plotXAxis2.ScaleDisplay.TextFormatting.Precision = 0;
-            plotXAxis2.ScaleDisplay.TextWidthMinValue = 0D;
-            plotXAxis2.ScaleDisplay.TickMajor.Length = 6;
-            plotXAxis2.ScaleDisplay.TickMajor.TextMargin = 1;
-            plotXAxis2.ScaleDisplay.TickMid.TextVisible = false;
-            plotXAxis2.ScaleDisplay.TickMinor.Length = 0;
-            plotXAxis2.ScaleRange.Min = -1000D;
-            plotXAxis2.ScaleRange.Span = 2000D;
-            plotXAxis2.Title.Text = "X-Axis 1";
-            plotXAxis2.Tracking.AlignFirstStyle = Iocomp.Types.PlotTrackingAlignFirstStyle.None;
-            this.wave_plot.XAxes.Add(plotXAxis2);
-            plotYAxis2.CanFocus = false;
-            plotYAxis2.DockOrder = 0;
-            plotYAxis2.Name = "Y-Axis 1";
-            plotYAxis2.ScaleDisplay.Margin = 0;
-            plotYAxis2.ScaleDisplay.TextFormatting.Precision = 0;
-            plotYAxis2.ScaleDisplay.TextWidthMinValue = 0D;
-            plotYAxis2.ScaleDisplay.TickMajor.Length = 6;
-            plotYAxis2.ScaleDisplay.TickMajor.TextMargin = 1;
-            plotYAxis2.ScaleDisplay.TickMid.TextVisible = false;
-            plotYAxis2.ScaleDisplay.TickMinor.Length = 0;
-            plotYAxis2.ScaleRange.Min = -1000D;
-            plotYAxis2.ScaleRange.Span = 2000D;
-            plotYAxis2.Title.Text = "Y-Axis 1";
-            plotYAxis2.Tracking.Style = Iocomp.Types.PlotTrackingStyle.ScrollSmooth;
-            this.wave_plot.YAxes.Add(plotYAxis2);
+            plotXAxis5.CanFocus = false;
+            plotXAxis5.DockOrder = 0;
+            plotXAxis5.Name = "X-Axis 1";
+            plotXAxis5.ScaleDisplay.Margin = 0;
+            plotXAxis5.ScaleDisplay.TextFormatting.Precision = 0;
+            plotXAxis5.ScaleDisplay.TextWidthMinValue = 0D;
+            plotXAxis5.ScaleDisplay.TickMajor.Length = 6;
+            plotXAxis5.ScaleDisplay.TickMajor.TextMargin = 1;
+            plotXAxis5.ScaleDisplay.TickMid.TextVisible = false;
+            plotXAxis5.ScaleDisplay.TickMinor.Length = 0;
+            plotXAxis5.ScaleRange.Min = -1000D;
+            plotXAxis5.ScaleRange.Span = 2000D;
+            plotXAxis5.Title.Text = "X-Axis 1";
+            plotXAxis5.Tracking.AlignFirstStyle = Iocomp.Types.PlotTrackingAlignFirstStyle.None;
+            this.wave_plot.XAxes.Add(plotXAxis5);
+            plotYAxis5.CanFocus = false;
+            plotYAxis5.DockOrder = 0;
+            plotYAxis5.Name = "Y-Axis 1";
+            plotYAxis5.ScaleDisplay.Margin = 0;
+            plotYAxis5.ScaleDisplay.TextFormatting.Precision = 0;
+            plotYAxis5.ScaleDisplay.TextWidthMinValue = 0D;
+            plotYAxis5.ScaleDisplay.TickMajor.Length = 6;
+            plotYAxis5.ScaleDisplay.TickMajor.TextMargin = 1;
+            plotYAxis5.ScaleDisplay.TickMid.TextVisible = false;
+            plotYAxis5.ScaleDisplay.TickMinor.Length = 0;
+            plotYAxis5.ScaleRange.Min = -1000D;
+            plotYAxis5.ScaleRange.Span = 2000D;
+            plotYAxis5.Title.Text = "Y-Axis 1";
+            plotYAxis5.Tracking.Style = Iocomp.Types.PlotTrackingStyle.ScrollSmooth;
+            this.wave_plot.YAxes.Add(plotYAxis5);
             this.wave_plot.LoadingEnd();
             // 
             // imageList1
@@ -1273,20 +1360,20 @@
             this.navigationFrame1.Controls.Add(this.navigationPage1);
             this.navigationFrame1.Controls.Add(this.navigationPage2);
             this.navigationFrame1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.navigationFrame1.Location = new System.Drawing.Point(240, 150);
+            this.navigationFrame1.Location = new System.Drawing.Point(240, 151);
             this.navigationFrame1.Name = "navigationFrame1";
             this.navigationFrame1.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.navigationPage1,
             this.navigationPage2});
             this.navigationFrame1.SelectedPage = this.navigationPage2;
-            this.navigationFrame1.Size = new System.Drawing.Size(925, 546);
+            this.navigationFrame1.Size = new System.Drawing.Size(925, 545);
             this.navigationFrame1.TabIndex = 6;
             this.navigationFrame1.Text = "navigationFrame1";
             // 
             // navigationPage1
             // 
             this.navigationPage1.Name = "navigationPage1";
-            this.navigationPage1.Size = new System.Drawing.Size(925, 546);
+            this.navigationPage1.Size = new System.Drawing.Size(925, 545);
             // 
             // navigationPage2
             // 
@@ -1294,7 +1381,7 @@
             this.navigationPage2.Controls.Add(this.wave_plot);
             this.navigationPage2.Margin = new System.Windows.Forms.Padding(0);
             this.navigationPage2.Name = "navigationPage2";
-            this.navigationPage2.Size = new System.Drawing.Size(925, 546);
+            this.navigationPage2.Size = new System.Drawing.Size(925, 545);
             // 
             // panel1
             // 
@@ -1630,11 +1717,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemComboBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemHypertextLabel1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl2)).EndInit();
             this.navBarControl2.ResumeLayout(false);
             this.navBarGroupControlContainer1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
+            this.panelControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).EndInit();
             this.navBarControl1.ResumeLayout(false);
             this.navBarGroupControlContainer3.ResumeLayout(false);
@@ -1776,5 +1866,13 @@
         private DevExpress.XtraNavBar.NavBarGroup navBarGroup3;
         private DevExpress.XtraNavBar.NavBarGroup navBarGroup4;
         private DevExpress.XtraEditors.PanelControl panelControl1;
+        private DevExpress.XtraEditors.DropDownButton dropDownButton1;
+        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.CheckButton checkButton1;
+        private DevExpress.XtraBars.BarStaticItem barStaticItem2;
+        private DevExpress.XtraBars.BarEditItem barEditItem10;
+        private DevExpress.XtraEditors.Repository.RepositoryItemHypertextLabel repositoryItemHypertextLabel1;
+        private DevExpress.XtraBars.BarEditItem barEditItem11;
+        private DevExpress.XtraEditors.Repository.RepositoryItemTextEdit repositoryItemTextEdit2;
     }
 }

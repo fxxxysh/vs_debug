@@ -44,6 +44,7 @@ namespace DXApplication3
 
         public void loop()
         {
+            barStaticItem2.Caption = "12312423";
             while (true)
             {
                 Thread.Sleep(2000);
@@ -124,6 +125,21 @@ namespace DXApplication3
             barButtonItem8.ImageOptions.LargeImage = global::DXApplication3.Properties.Resources.stop_32x32;
             // DXApplication3.Properties.Resources.play_32x322  DXApplication3.Properties.Resources.stop_32x321
             //Image = System.Drawing.Bitmap, LargeImage = System.Drawing.Bitmap
+        }
+
+        private void navBarGroup7_ItemChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void navBarControl2_NavPaneStateChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void navBarControl2_ActiveGroupChanged(object sender, DevExpress.XtraNavBar.NavBarGroupEventArgs e)
+        {
+
         }
     }
 }

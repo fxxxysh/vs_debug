@@ -70,6 +70,21 @@
             this.navBarControl2 = new DevExpress.XtraNavBar.NavBarControl();
             this.navBarGroup1 = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarGroupControlContainer1 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.navBarControl1 = new DevExpress.XtraNavBar.NavBarControl();
+            this.navBarGroup2 = new DevExpress.XtraNavBar.NavBarGroup();
+            this.navBarGroupControlContainer3 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
+            this.checkedListBoxControl2 = new DevExpress.XtraEditors.CheckedListBoxControl();
+            this.navBarGroupControlContainer4 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
+            this.button12 = new System.Windows.Forms.Button();
+            this.navBarGroupControlContainer5 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
+            this.navBarGroup3 = new DevExpress.XtraNavBar.NavBarGroup();
+            this.navBarGroup4 = new DevExpress.XtraNavBar.NavBarGroup();
             this.navBarItem1 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarGroupControlContainer2 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
             this.button7 = new System.Windows.Forms.Button();
@@ -97,21 +112,6 @@
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.navBarControl1 = new DevExpress.XtraNavBar.NavBarControl();
-            this.navBarGroup2 = new DevExpress.XtraNavBar.NavBarGroup();
-            this.navBarGroupControlContainer3 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
-            this.navBarGroupControlContainer4 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
-            this.navBarGroupControlContainer5 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
-            this.navBarGroup3 = new DevExpress.XtraNavBar.NavBarGroup();
-            this.navBarGroup4 = new DevExpress.XtraNavBar.NavBarGroup();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.checkedListBoxControl2 = new DevExpress.XtraEditors.CheckedListBoxControl();
             ((System.ComponentModel.ISupportInitialize)(this.xrDesignRibbonController1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xrDesignDockManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barAndDockingController1)).BeginInit();
@@ -131,19 +131,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl2)).BeginInit();
             this.navBarControl2.SuspendLayout();
             this.navBarGroupControlContainer1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
+            this.navBarControl1.SuspendLayout();
+            this.navBarGroupControlContainer3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkedListBoxControl2)).BeginInit();
+            this.navBarGroupControlContainer4.SuspendLayout();
+            this.navBarGroupControlContainer5.SuspendLayout();
             this.navBarGroupControlContainer2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkedListBoxControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
-            this.navBarControl1.SuspendLayout();
-            this.navBarGroupControlContainer3.SuspendLayout();
-            this.navBarGroupControlContainer4.SuspendLayout();
-            this.navBarGroupControlContainer5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.checkedListBoxControl2)).BeginInit();
             this.SuspendLayout();
             // 
             // xrDesignRibbonController1
@@ -205,7 +205,7 @@
             // 
             // defaultLookAndFeel1
             // 
-            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2016 Dark";
+            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2013 Dark Gray";
             // 
             // listBoxControl1
             // 
@@ -422,6 +422,171 @@
             this.navBarGroupControlContainer1.Name = "navBarGroupControlContainer1";
             this.navBarGroupControlContainer1.Size = new System.Drawing.Size(240, 416);
             this.navBarGroupControlContainer1.TabIndex = 1;
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(12, 373);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(75, 23);
+            this.button10.TabIndex = 3;
+            this.button10.Text = "button10";
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(105, 329);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 23);
+            this.button9.TabIndex = 2;
+            this.button9.Text = "button9";
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(6, 329);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.TabIndex = 1;
+            this.button8.Text = "button8";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.navBarControl1);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(240, 302);
+            this.panel1.TabIndex = 0;
+            // 
+            // navBarControl1
+            // 
+            this.navBarControl1.ActiveGroup = this.navBarGroup2;
+            this.navBarControl1.BackColor = System.Drawing.Color.White;
+            this.navBarControl1.Controls.Add(this.navBarGroupControlContainer3);
+            this.navBarControl1.Controls.Add(this.navBarGroupControlContainer4);
+            this.navBarControl1.Controls.Add(this.navBarGroupControlContainer5);
+            this.navBarControl1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.navBarControl1.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
+            this.navBarGroup2,
+            this.navBarGroup3,
+            this.navBarGroup4});
+            this.navBarControl1.Location = new System.Drawing.Point(0, 0);
+            this.navBarControl1.LookAndFeel.SkinName = "Office 2016 Black";
+            this.navBarControl1.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.navBarControl1.Name = "navBarControl1";
+            this.navBarControl1.OptionsNavPane.ExpandedWidth = 237;
+            this.navBarControl1.Size = new System.Drawing.Size(237, 302);
+            this.navBarControl1.TabIndex = 1;
+            this.navBarControl1.Text = "navBarControl1";
+            this.navBarControl1.View = new DevExpress.XtraNavBar.ViewInfo.SkinExplorerBarViewInfoRegistrator();
+            // 
+            // navBarGroup2
+            // 
+            this.navBarGroup2.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.navBarGroup2.Appearance.Options.UseFont = true;
+            this.navBarGroup2.Caption = "navBarGroup2";
+            this.navBarGroup2.ControlContainer = this.navBarGroupControlContainer3;
+            this.navBarGroup2.GroupClientHeight = 400;
+            this.navBarGroup2.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
+            this.navBarGroup2.Name = "navBarGroup2";
+            // 
+            // navBarGroupControlContainer3
+            // 
+            this.navBarGroupControlContainer3.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.navBarGroupControlContainer3.Appearance.Options.UseBackColor = true;
+            this.navBarGroupControlContainer3.Controls.Add(this.checkedListBoxControl2);
+            this.navBarGroupControlContainer3.Name = "navBarGroupControlContainer3";
+            this.navBarGroupControlContainer3.Size = new System.Drawing.Size(225, 394);
+            this.navBarGroupControlContainer3.TabIndex = 0;
+            // 
+            // checkedListBoxControl2
+            // 
+            this.checkedListBoxControl2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.checkedListBoxControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.checkedListBoxControl2.Items.AddRange(new DevExpress.XtraEditors.Controls.CheckedListBoxItem[] {
+            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "1"),
+            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "2"),
+            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "3"),
+            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "4"),
+            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "5"),
+            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "6"),
+            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "7"),
+            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null)});
+            this.checkedListBoxControl2.Location = new System.Drawing.Point(0, 0);
+            this.checkedListBoxControl2.LookAndFeel.SkinName = "Office 2016 Black";
+            this.checkedListBoxControl2.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.checkedListBoxControl2.Margin = new System.Windows.Forms.Padding(0);
+            this.checkedListBoxControl2.Name = "checkedListBoxControl2";
+            this.checkedListBoxControl2.Size = new System.Drawing.Size(225, 394);
+            this.checkedListBoxControl2.TabIndex = 0;
+            // 
+            // navBarGroupControlContainer4
+            // 
+            this.navBarGroupControlContainer4.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.navBarGroupControlContainer4.Appearance.Options.UseBackColor = true;
+            this.navBarGroupControlContainer4.Controls.Add(this.button12);
+            this.navBarGroupControlContainer4.Name = "navBarGroupControlContainer4";
+            this.navBarGroupControlContainer4.Size = new System.Drawing.Size(225, 74);
+            this.navBarGroupControlContainer4.TabIndex = 1;
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(75, 12);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(75, 23);
+            this.button12.TabIndex = 0;
+            this.button12.Text = "button12";
+            this.button12.UseVisualStyleBackColor = true;
+            // 
+            // navBarGroupControlContainer5
+            // 
+            this.navBarGroupControlContainer5.Appearance.BackColor = System.Drawing.SystemColors.Control;
+            this.navBarGroupControlContainer5.Appearance.Options.UseBackColor = true;
+            this.navBarGroupControlContainer5.Controls.Add(this.button14);
+            this.navBarGroupControlContainer5.Controls.Add(this.button13);
+            this.navBarGroupControlContainer5.Name = "navBarGroupControlContainer5";
+            this.navBarGroupControlContainer5.Size = new System.Drawing.Size(225, 184);
+            this.navBarGroupControlContainer5.TabIndex = 2;
+            // 
+            // button14
+            // 
+            this.button14.Location = new System.Drawing.Point(34, 42);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(75, 23);
+            this.button14.TabIndex = 1;
+            this.button14.Text = "button14";
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            this.button13.Location = new System.Drawing.Point(82, 91);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(75, 23);
+            this.button13.TabIndex = 0;
+            this.button13.Text = "button13";
+            this.button13.UseVisualStyleBackColor = true;
+            // 
+            // navBarGroup3
+            // 
+            this.navBarGroup3.Appearance.Options.UseFont = true;
+            this.navBarGroup3.Caption = "navBarGroup3";
+            this.navBarGroup3.ControlContainer = this.navBarGroupControlContainer4;
+            this.navBarGroup3.GroupClientHeight = 80;
+            this.navBarGroup3.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
+            this.navBarGroup3.Name = "navBarGroup3";
+            // 
+            // navBarGroup4
+            // 
+            this.navBarGroup4.Appearance.Options.UseFont = true;
+            this.navBarGroup4.Caption = "navBarGroup4";
+            this.navBarGroup4.ControlContainer = this.navBarGroupControlContainer5;
+            this.navBarGroup4.Expanded = true;
+            this.navBarGroup4.GroupClientHeight = 190;
+            this.navBarGroup4.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
+            this.navBarGroup4.Name = "navBarGroup4";
             // 
             // navBarItem1
             // 
@@ -650,171 +815,6 @@
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 645);
             // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.navBarControl1);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(240, 302);
-            this.panel1.TabIndex = 0;
-            // 
-            // navBarControl1
-            // 
-            this.navBarControl1.ActiveGroup = this.navBarGroup2;
-            this.navBarControl1.BackColor = System.Drawing.Color.White;
-            this.navBarControl1.Controls.Add(this.navBarGroupControlContainer3);
-            this.navBarControl1.Controls.Add(this.navBarGroupControlContainer4);
-            this.navBarControl1.Controls.Add(this.navBarGroupControlContainer5);
-            this.navBarControl1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.navBarControl1.Groups.AddRange(new DevExpress.XtraNavBar.NavBarGroup[] {
-            this.navBarGroup2,
-            this.navBarGroup3,
-            this.navBarGroup4});
-            this.navBarControl1.Location = new System.Drawing.Point(0, 0);
-            this.navBarControl1.LookAndFeel.SkinName = "Office 2016 Black";
-            this.navBarControl1.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.navBarControl1.Name = "navBarControl1";
-            this.navBarControl1.OptionsNavPane.ExpandedWidth = 237;
-            this.navBarControl1.Size = new System.Drawing.Size(237, 302);
-            this.navBarControl1.TabIndex = 1;
-            this.navBarControl1.Text = "navBarControl1";
-            this.navBarControl1.View = new DevExpress.XtraNavBar.ViewInfo.SkinExplorerBarViewInfoRegistrator();
-            // 
-            // navBarGroup2
-            // 
-            this.navBarGroup2.Appearance.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.navBarGroup2.Appearance.Options.UseFont = true;
-            this.navBarGroup2.Caption = "navBarGroup2";
-            this.navBarGroup2.ControlContainer = this.navBarGroupControlContainer3;
-            this.navBarGroup2.GroupClientHeight = 400;
-            this.navBarGroup2.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
-            this.navBarGroup2.Name = "navBarGroup2";
-            // 
-            // navBarGroupControlContainer3
-            // 
-            this.navBarGroupControlContainer3.Appearance.BackColor = System.Drawing.SystemColors.Control;
-            this.navBarGroupControlContainer3.Appearance.Options.UseBackColor = true;
-            this.navBarGroupControlContainer3.Controls.Add(this.checkedListBoxControl2);
-            this.navBarGroupControlContainer3.Name = "navBarGroupControlContainer3";
-            this.navBarGroupControlContainer3.Size = new System.Drawing.Size(225, 394);
-            this.navBarGroupControlContainer3.TabIndex = 0;
-            // 
-            // navBarGroupControlContainer4
-            // 
-            this.navBarGroupControlContainer4.Appearance.BackColor = System.Drawing.SystemColors.Control;
-            this.navBarGroupControlContainer4.Appearance.Options.UseBackColor = true;
-            this.navBarGroupControlContainer4.Controls.Add(this.button12);
-            this.navBarGroupControlContainer4.Name = "navBarGroupControlContainer4";
-            this.navBarGroupControlContainer4.Size = new System.Drawing.Size(225, 74);
-            this.navBarGroupControlContainer4.TabIndex = 1;
-            // 
-            // navBarGroupControlContainer5
-            // 
-            this.navBarGroupControlContainer5.Appearance.BackColor = System.Drawing.SystemColors.Control;
-            this.navBarGroupControlContainer5.Appearance.Options.UseBackColor = true;
-            this.navBarGroupControlContainer5.Controls.Add(this.button14);
-            this.navBarGroupControlContainer5.Controls.Add(this.button13);
-            this.navBarGroupControlContainer5.Name = "navBarGroupControlContainer5";
-            this.navBarGroupControlContainer5.Size = new System.Drawing.Size(225, 184);
-            this.navBarGroupControlContainer5.TabIndex = 2;
-            // 
-            // navBarGroup3
-            // 
-            this.navBarGroup3.Appearance.Options.UseFont = true;
-            this.navBarGroup3.Caption = "navBarGroup3";
-            this.navBarGroup3.ControlContainer = this.navBarGroupControlContainer4;
-            this.navBarGroup3.GroupClientHeight = 80;
-            this.navBarGroup3.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
-            this.navBarGroup3.Name = "navBarGroup3";
-            // 
-            // navBarGroup4
-            // 
-            this.navBarGroup4.Appearance.Options.UseFont = true;
-            this.navBarGroup4.Caption = "navBarGroup4";
-            this.navBarGroup4.ControlContainer = this.navBarGroupControlContainer5;
-            this.navBarGroup4.Expanded = true;
-            this.navBarGroup4.GroupClientHeight = 190;
-            this.navBarGroup4.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
-            this.navBarGroup4.Name = "navBarGroup4";
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(6, 329);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(75, 23);
-            this.button8.TabIndex = 1;
-            this.button8.Text = "button8";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(105, 329);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(75, 23);
-            this.button9.TabIndex = 2;
-            this.button9.Text = "button9";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(12, 373);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 23);
-            this.button10.TabIndex = 3;
-            this.button10.Text = "button10";
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            this.button12.Location = new System.Drawing.Point(75, 12);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 23);
-            this.button12.TabIndex = 0;
-            this.button12.Text = "button12";
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            this.button13.Location = new System.Drawing.Point(82, 91);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(75, 23);
-            this.button13.TabIndex = 0;
-            this.button13.Text = "button13";
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // button14
-            // 
-            this.button14.Location = new System.Drawing.Point(34, 42);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(75, 23);
-            this.button14.TabIndex = 1;
-            this.button14.Text = "button14";
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // checkedListBoxControl2
-            // 
-            this.checkedListBoxControl2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.checkedListBoxControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.checkedListBoxControl2.Items.AddRange(new DevExpress.XtraEditors.Controls.CheckedListBoxItem[] {
-            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "1"),
-            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "2"),
-            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "3"),
-            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "4"),
-            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "5"),
-            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "6"),
-            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null, "7"),
-            new DevExpress.XtraEditors.Controls.CheckedListBoxItem(null)});
-            this.checkedListBoxControl2.Location = new System.Drawing.Point(0, 0);
-            this.checkedListBoxControl2.LookAndFeel.SkinName = "Office 2016 Black";
-            this.checkedListBoxControl2.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.checkedListBoxControl2.Margin = new System.Windows.Forms.Padding(0);
-            this.checkedListBoxControl2.Name = "checkedListBoxControl2";
-            this.checkedListBoxControl2.Size = new System.Drawing.Size(225, 394);
-            this.checkedListBoxControl2.TabIndex = 0;
-            // 
             // Form1
             // 
             this.Appearance.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -860,19 +860,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl2)).EndInit();
             this.navBarControl2.ResumeLayout(false);
             this.navBarGroupControlContainer1.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).EndInit();
+            this.navBarControl1.ResumeLayout(false);
+            this.navBarGroupControlContainer3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.checkedListBoxControl2)).EndInit();
+            this.navBarGroupControlContainer4.ResumeLayout(false);
+            this.navBarGroupControlContainer5.ResumeLayout(false);
             this.navBarGroupControlContainer2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkedComboBoxEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.checkedListBoxControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).EndInit();
-            this.navBarControl1.ResumeLayout(false);
-            this.navBarGroupControlContainer3.ResumeLayout(false);
-            this.navBarGroupControlContainer4.ResumeLayout(false);
-            this.navBarGroupControlContainer5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.checkedListBoxControl2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

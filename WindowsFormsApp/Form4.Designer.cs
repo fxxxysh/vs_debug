@@ -28,17 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
-            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonMiniToolbar1 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar(this.components);
+            this.ribbonMiniToolbar1 = new DevExpress.XtraBars.Ribbon.RibbonMiniToolbar();
             this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
+            this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
+            this.backstageViewClientControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.backstageViewClientControl2 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.backstageViewClientControl3 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
+            this.backstageViewTabItem1 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.backstageViewTabItem2 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.backstageViewTabItem3 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
+            this.backstageViewButtonItem1 = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
+            this.backstageViewButtonItem2 = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
             this.xtraTabPage4 = new DevExpress.XtraTab.XtraTabPage();
             this.navigationFrame1 = new DevExpress.XtraBars.Navigation.NavigationFrame();
             this.navigationPage1 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.navigationPage2 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.windowsUIButtonPanel1 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel();
+            this.dropDownButton1 = new DevExpress.XtraEditors.DropDownButton();
+            this.checkButton1 = new DevExpress.XtraEditors.CheckButton();
+            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.buttonEdit1 = new DevExpress.XtraEditors.ButtonEdit();
             this.navigationPage3 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.navigationPage4 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.navBarControl1 = new DevExpress.XtraNavBar.NavBarControl();
@@ -59,35 +72,21 @@
             this.navBarItem9 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem10 = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarItem11 = new DevExpress.XtraNavBar.NavBarItem();
-            this.buttonEdit1 = new DevExpress.XtraEditors.ButtonEdit();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
-            this.checkButton1 = new DevExpress.XtraEditors.CheckButton();
-            this.dropDownButton1 = new DevExpress.XtraEditors.DropDownButton();
-            this.windowsUIButtonPanel1 = new DevExpress.XtraBars.Docking2010.WindowsUIButtonPanel();
-            this.backstageViewControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewControl();
-            this.backstageViewClientControl1 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
-            this.backstageViewTabItem1 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
-            this.backstageViewClientControl2 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
-            this.backstageViewTabItem2 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
-            this.backstageViewClientControl3 = new DevExpress.XtraBars.Ribbon.BackstageViewClientControl();
-            this.backstageViewTabItem3 = new DevExpress.XtraBars.Ribbon.BackstageViewTabItem();
-            this.backstageViewButtonItem1 = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
-            this.backstageViewButtonItem2 = new DevExpress.XtraBars.Ribbon.BackstageViewButtonItem();
             this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
             this.xtraTabControl1.SuspendLayout();
             this.xtraTabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).BeginInit();
+            this.backstageViewControl1.SuspendLayout();
             this.xtraTabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame1)).BeginInit();
             this.navigationFrame1.SuspendLayout();
             this.navigationPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).BeginInit();
             this.navBarControl1.SuspendLayout();
             this.xtraTabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).BeginInit();
-            this.backstageViewControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // defaultLookAndFeel1
@@ -128,12 +127,81 @@
             this.xtraTabPage2.Size = new System.Drawing.Size(951, 520);
             this.xtraTabPage2.Text = "xtraTabPage2";
             // 
+            // backstageViewControl1
+            // 
+            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl1);
+            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl2);
+            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl3);
+            this.backstageViewControl1.Items.Add(this.backstageViewTabItem1);
+            this.backstageViewControl1.Items.Add(this.backstageViewTabItem2);
+            this.backstageViewControl1.Items.Add(this.backstageViewTabItem3);
+            this.backstageViewControl1.Items.Add(this.backstageViewButtonItem1);
+            this.backstageViewControl1.Items.Add(this.backstageViewButtonItem2);
+            this.backstageViewControl1.Location = new System.Drawing.Point(-2, 16);
+            this.backstageViewControl1.Name = "backstageViewControl1";
+            this.backstageViewControl1.SelectedTab = this.backstageViewTabItem3;
+            this.backstageViewControl1.SelectedTabIndex = 2;
+            this.backstageViewControl1.Size = new System.Drawing.Size(795, 434);
+            this.backstageViewControl1.Style = DevExpress.XtraBars.Ribbon.BackstageViewStyle.Office2013;
+            this.backstageViewControl1.TabIndex = 0;
+            this.backstageViewControl1.Text = "backstageViewControl1";
+            // 
+            // backstageViewClientControl1
+            // 
+            this.backstageViewClientControl1.Location = new System.Drawing.Point(214, 63);
+            this.backstageViewClientControl1.Name = "backstageViewClientControl1";
+            this.backstageViewClientControl1.Size = new System.Drawing.Size(580, 370);
+            this.backstageViewClientControl1.TabIndex = 1;
+            // 
+            // backstageViewClientControl2
+            // 
+            this.backstageViewClientControl2.Location = new System.Drawing.Point(214, 63);
+            this.backstageViewClientControl2.Name = "backstageViewClientControl2";
+            this.backstageViewClientControl2.Size = new System.Drawing.Size(580, 370);
+            this.backstageViewClientControl2.TabIndex = 2;
+            // 
+            // backstageViewClientControl3
+            // 
+            this.backstageViewClientControl3.Location = new System.Drawing.Point(214, 63);
+            this.backstageViewClientControl3.Name = "backstageViewClientControl3";
+            this.backstageViewClientControl3.Size = new System.Drawing.Size(580, 370);
+            this.backstageViewClientControl3.TabIndex = 3;
+            // 
+            // backstageViewTabItem1
+            // 
+            this.backstageViewTabItem1.Caption = "backstageViewTabItem1";
+            this.backstageViewTabItem1.ContentControl = this.backstageViewClientControl1;
+            this.backstageViewTabItem1.Name = "backstageViewTabItem1";
+            // 
+            // backstageViewTabItem2
+            // 
+            this.backstageViewTabItem2.Caption = "backstageViewTabItem2";
+            this.backstageViewTabItem2.ContentControl = this.backstageViewClientControl2;
+            this.backstageViewTabItem2.Name = "backstageViewTabItem2";
+            // 
+            // backstageViewTabItem3
+            // 
+            this.backstageViewTabItem3.Caption = "backstageViewTabItem3";
+            this.backstageViewTabItem3.ContentControl = this.backstageViewClientControl3;
+            this.backstageViewTabItem3.Name = "backstageViewTabItem3";
+            this.backstageViewTabItem3.Selected = true;
+            // 
+            // backstageViewButtonItem1
+            // 
+            this.backstageViewButtonItem1.Caption = "backstageViewButtonItem1";
+            this.backstageViewButtonItem1.Name = "backstageViewButtonItem1";
+            // 
+            // backstageViewButtonItem2
+            // 
+            this.backstageViewButtonItem2.Caption = "backstageViewButtonItem2";
+            this.backstageViewButtonItem2.Name = "backstageViewButtonItem2";
+            // 
             // xtraTabPage4
             // 
             this.xtraTabPage4.Controls.Add(this.navigationFrame1);
             this.xtraTabPage4.Controls.Add(this.navBarControl1);
             this.xtraTabPage4.Name = "xtraTabPage4";
-            this.xtraTabPage4.Size = new System.Drawing.Size(796, 469);
+            this.xtraTabPage4.Size = new System.Drawing.Size(951, 520);
             this.xtraTabPage4.Text = "xtraTabPage4";
             // 
             // navigationFrame1
@@ -166,6 +234,7 @@
             // 
             // navigationPage2
             // 
+            this.navigationPage2.Caption = "navigationPage2";
             this.navigationPage2.Controls.Add(this.windowsUIButtonPanel1);
             this.navigationPage2.Controls.Add(this.dropDownButton1);
             this.navigationPage2.Controls.Add(this.checkButton1);
@@ -173,6 +242,53 @@
             this.navigationPage2.Controls.Add(this.buttonEdit1);
             this.navigationPage2.Name = "navigationPage2";
             this.navigationPage2.Size = new System.Drawing.Size(550, 381);
+            // 
+            // windowsUIButtonPanel1
+            // 
+            this.windowsUIButtonPanel1.Buttons.AddRange(new DevExpress.XtraEditors.ButtonPanel.IBaseButton[] {
+            new DevExpress.XtraBars.Docking2010.WindowsUIButton(),
+            new DevExpress.XtraBars.Docking2010.WindowsUIButton()});
+            this.windowsUIButtonPanel1.Location = new System.Drawing.Point(314, 83);
+            this.windowsUIButtonPanel1.Name = "windowsUIButtonPanel1";
+            this.windowsUIButtonPanel1.Size = new System.Drawing.Size(75, 23);
+            this.windowsUIButtonPanel1.TabIndex = 5;
+            this.windowsUIButtonPanel1.Text = "windowsUIButtonPanel1";
+            // 
+            // dropDownButton1
+            // 
+            this.dropDownButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("dropDownButton1.ImageOptions.Image")));
+            this.dropDownButton1.Location = new System.Drawing.Point(256, 218);
+            this.dropDownButton1.LookAndFeel.SkinName = "Darkroom";
+            this.dropDownButton1.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.dropDownButton1.Name = "dropDownButton1";
+            this.dropDownButton1.Size = new System.Drawing.Size(135, 23);
+            this.dropDownButton1.TabIndex = 4;
+            this.dropDownButton1.Text = "dropDownButton1";
+            // 
+            // checkButton1
+            // 
+            this.checkButton1.Location = new System.Drawing.Point(126, 218);
+            this.checkButton1.Name = "checkButton1";
+            this.checkButton1.Size = new System.Drawing.Size(75, 23);
+            this.checkButton1.TabIndex = 3;
+            this.checkButton1.Text = "checkButton1";
+            // 
+            // simpleButton1
+            // 
+            this.simpleButton1.Location = new System.Drawing.Point(268, 163);
+            this.simpleButton1.Name = "simpleButton1";
+            this.simpleButton1.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton1.TabIndex = 2;
+            this.simpleButton1.Text = "simpleButton1";
+            // 
+            // buttonEdit1
+            // 
+            this.buttonEdit1.Location = new System.Drawing.Point(116, 160);
+            this.buttonEdit1.Name = "buttonEdit1";
+            this.buttonEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton()});
+            this.buttonEdit1.Size = new System.Drawing.Size(100, 20);
+            this.buttonEdit1.TabIndex = 1;
             // 
             // navigationPage3
             // 
@@ -370,122 +486,6 @@
             this.navBarItem11.ImageOptions.SmallImage = ((System.Drawing.Image)(resources.GetObject("navBarItem11.ImageOptions.SmallImage")));
             this.navBarItem11.Name = "navBarItem11";
             // 
-            // buttonEdit1
-            // 
-            this.buttonEdit1.Location = new System.Drawing.Point(116, 160);
-            this.buttonEdit1.Name = "buttonEdit1";
-            this.buttonEdit1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton()});
-            this.buttonEdit1.Size = new System.Drawing.Size(100, 20);
-            this.buttonEdit1.TabIndex = 1;
-            // 
-            // simpleButton1
-            // 
-            this.simpleButton1.Location = new System.Drawing.Point(268, 163);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton1.TabIndex = 2;
-            this.simpleButton1.Text = "simpleButton1";
-            // 
-            // checkButton1
-            // 
-            this.checkButton1.Location = new System.Drawing.Point(126, 218);
-            this.checkButton1.Name = "checkButton1";
-            this.checkButton1.Size = new System.Drawing.Size(75, 23);
-            this.checkButton1.TabIndex = 3;
-            this.checkButton1.Text = "checkButton1";
-            // 
-            // dropDownButton1
-            // 
-            this.dropDownButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("dropDownButton1.ImageOptions.Image")));
-            this.dropDownButton1.Location = new System.Drawing.Point(256, 218);
-            this.dropDownButton1.LookAndFeel.SkinName = "Darkroom";
-            this.dropDownButton1.LookAndFeel.UseDefaultLookAndFeel = false;
-            this.dropDownButton1.Name = "dropDownButton1";
-            this.dropDownButton1.Size = new System.Drawing.Size(135, 23);
-            this.dropDownButton1.TabIndex = 4;
-            this.dropDownButton1.Text = "dropDownButton1";
-            // 
-            // windowsUIButtonPanel1
-            // 
-            this.windowsUIButtonPanel1.Buttons.AddRange(new DevExpress.XtraEditors.ButtonPanel.IBaseButton[] {
-            new DevExpress.XtraBars.Docking2010.WindowsUIButton(),
-            new DevExpress.XtraBars.Docking2010.WindowsUIButton()});
-            this.windowsUIButtonPanel1.Location = new System.Drawing.Point(314, 83);
-            this.windowsUIButtonPanel1.Name = "windowsUIButtonPanel1";
-            this.windowsUIButtonPanel1.Size = new System.Drawing.Size(75, 23);
-            this.windowsUIButtonPanel1.TabIndex = 5;
-            this.windowsUIButtonPanel1.Text = "windowsUIButtonPanel1";
-            // 
-            // backstageViewControl1
-            // 
-            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl1);
-            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl2);
-            this.backstageViewControl1.Controls.Add(this.backstageViewClientControl3);
-            this.backstageViewControl1.Items.Add(this.backstageViewTabItem1);
-            this.backstageViewControl1.Items.Add(this.backstageViewTabItem2);
-            this.backstageViewControl1.Items.Add(this.backstageViewTabItem3);
-            this.backstageViewControl1.Items.Add(this.backstageViewButtonItem1);
-            this.backstageViewControl1.Items.Add(this.backstageViewButtonItem2);
-            this.backstageViewControl1.Location = new System.Drawing.Point(-2, 16);
-            this.backstageViewControl1.Name = "backstageViewControl1";
-            this.backstageViewControl1.SelectedTab = this.backstageViewTabItem3;
-            this.backstageViewControl1.SelectedTabIndex = 2;
-            this.backstageViewControl1.Size = new System.Drawing.Size(795, 434);
-            this.backstageViewControl1.Style = DevExpress.XtraBars.Ribbon.BackstageViewStyle.Office2013;
-            this.backstageViewControl1.TabIndex = 0;
-            this.backstageViewControl1.Text = "backstageViewControl1";
-            // 
-            // backstageViewClientControl1
-            // 
-            this.backstageViewClientControl1.Location = new System.Drawing.Point(214, 63);
-            this.backstageViewClientControl1.Name = "backstageViewClientControl1";
-            this.backstageViewClientControl1.Size = new System.Drawing.Size(580, 370);
-            this.backstageViewClientControl1.TabIndex = 1;
-            // 
-            // backstageViewTabItem1
-            // 
-            this.backstageViewTabItem1.Caption = "backstageViewTabItem1";
-            this.backstageViewTabItem1.ContentControl = this.backstageViewClientControl1;
-            this.backstageViewTabItem1.Name = "backstageViewTabItem1";
-            // 
-            // backstageViewClientControl2
-            // 
-            this.backstageViewClientControl2.Location = new System.Drawing.Point(214, 63);
-            this.backstageViewClientControl2.Name = "backstageViewClientControl2";
-            this.backstageViewClientControl2.Size = new System.Drawing.Size(580, 370);
-            this.backstageViewClientControl2.TabIndex = 2;
-            // 
-            // backstageViewTabItem2
-            // 
-            this.backstageViewTabItem2.Caption = "backstageViewTabItem2";
-            this.backstageViewTabItem2.ContentControl = this.backstageViewClientControl2;
-            this.backstageViewTabItem2.Name = "backstageViewTabItem2";
-            // 
-            // backstageViewClientControl3
-            // 
-            this.backstageViewClientControl3.Location = new System.Drawing.Point(214, 63);
-            this.backstageViewClientControl3.Name = "backstageViewClientControl3";
-            this.backstageViewClientControl3.Size = new System.Drawing.Size(580, 370);
-            this.backstageViewClientControl3.TabIndex = 3;
-            // 
-            // backstageViewTabItem3
-            // 
-            this.backstageViewTabItem3.Caption = "backstageViewTabItem3";
-            this.backstageViewTabItem3.ContentControl = this.backstageViewClientControl3;
-            this.backstageViewTabItem3.Name = "backstageViewTabItem3";
-            this.backstageViewTabItem3.Selected = true;
-            // 
-            // backstageViewButtonItem1
-            // 
-            this.backstageViewButtonItem1.Caption = "backstageViewButtonItem1";
-            this.backstageViewButtonItem1.Name = "backstageViewButtonItem1";
-            // 
-            // backstageViewButtonItem2
-            // 
-            this.backstageViewButtonItem2.Caption = "backstageViewButtonItem2";
-            this.backstageViewButtonItem2.Name = "backstageViewButtonItem2";
-            // 
             // xtraTabPage3
             // 
             this.xtraTabPage3.Name = "xtraTabPage3";
@@ -505,17 +505,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
             this.xtraTabControl1.ResumeLayout(false);
             this.xtraTabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).EndInit();
+            this.backstageViewControl1.ResumeLayout(false);
             this.xtraTabPage4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame1)).EndInit();
             this.navigationFrame1.ResumeLayout(false);
             this.navigationPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl1)).EndInit();
             this.navBarControl1.ResumeLayout(false);
             this.xtraTabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.navBarControl2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buttonEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.backstageViewControl1)).EndInit();
-            this.backstageViewControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

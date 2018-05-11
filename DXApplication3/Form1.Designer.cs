@@ -29,7 +29,8 @@
         ///
         private void InitializeComponent()
         {
-            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel();
+            this.components = new System.ComponentModel.Container();
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.tabFormPage1 = new DevExpress.XtraBars.TabFormPage();
             this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
