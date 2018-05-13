@@ -41,11 +41,11 @@ namespace DXApplication3
             aaaaaMyData tt = new aaaaaMyData();
             InitializeComponent();
 
-            Binding binding = new Binding("Text", tt, "Name");
-            Binding binding1 = new Binding("Text", this, "dddTEXT");
+            Binding binding = new Binding("Text", this, "tt_caption");
+            Binding binding1 = new Binding("Caption", this, "tt_caption");
 
-            textEdit3.DataBindings.Add(binding);
-            textEdit2.DataBindings.Add(binding1);
+           // textEdit3.DataBindings.Add(binding);
+            barButtonItem8.DataBindings.Add(binding1);
 
             ribbonControl1.Minimized = true;
          
@@ -65,7 +65,7 @@ namespace DXApplication3
                 //    case 3: navigationFrame1.SelectedPage = navigationPage3; break;
                 //    case 4: navigationFrame1.SelectedPage = navigationPage4; break;
                 //}
-                Thread.Sleep(10);
+                Thread.Sleep(3000);
             }
         }
 
@@ -138,11 +138,14 @@ namespace DXApplication3
 
         }
 
+        int tt_ind = 0;
         private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             barButtonItem8.ImageOptions.LargeImage = global::DXApplication3.Properties.Resources.stop_32x32;
             // DXApplication3.Properties.Resources.play_32x322  DXApplication3.Properties.Resources.stop_32x321
             //Image = System.Drawing.Bitmap, LargeImage = System.Drawing.Bitmap
+            tt_ind++;
+            barButtonItem8.Caption = tt_ind.ToString();
         }
 
         private void navBarGroup1_CalcGroupClientHeight(object sender, DevExpress.XtraNavBar.NavBarCalcGroupClientHeightEventArgs e)
@@ -178,6 +181,24 @@ namespace DXApplication3
         {
             get { return this.textEdit1.Text; }
             set { this.textEdit1.Text = value; }
+        }
+
+        public string tt_caption
+        {
+            get { return barButtonItem9.Caption; }
+            set { barButtonItem9.Caption = value; }
+        }
+
+        
+
+        private void navBarControl2_NavPaneStateChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void navBarControl2_ActiveGroupChanged(object sender, DevExpress.XtraNavBar.NavBarGroupEventArgs e)
+        {
+
         }
     }
 

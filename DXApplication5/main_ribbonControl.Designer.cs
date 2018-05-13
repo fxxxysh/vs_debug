@@ -158,7 +158,6 @@
             this.navigationPage2 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
-            this.aaaaaMyDataBindingSource = new System.Windows.Forms.BindingSource();
             this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
             this.form1BindingSource = new System.Windows.Forms.BindingSource();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -191,6 +190,7 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.navigationPage4 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.aaaaaMyDataBindingSource = new System.Windows.Forms.BindingSource();
             this.toolsBindingSource = new System.Windows.Forms.BindingSource();
             this.imageList5 = new System.Windows.Forms.ImageList();
             this.imageList7 = new System.Windows.Forms.ImageList();
@@ -226,13 +226,13 @@
             this.navigationPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aaaaaMyDataBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource)).BeginInit();
             this.panel1.SuspendLayout();
             this.navigationPage1.SuspendLayout();
             this.navigationPage3.SuspendLayout();
             this.navigationPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.aaaaaMyDataBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toolsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -507,6 +507,7 @@
             // 
             // barEditItem6
             // 
+            this.barEditItem6.AccessibleName = "1344";
             this.barEditItem6.Caption = "串口   ";
             this.barEditItem6.Edit = this.repositoryItemComboBox3;
             this.barEditItem6.EditWidth = 100;
@@ -515,6 +516,7 @@
             // 
             // repositoryItemComboBox3
             // 
+            this.repositoryItemComboBox3.AccessibleName = "wrwer";
             this.repositoryItemComboBox3.AutoHeight = false;
             this.repositoryItemComboBox3.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
@@ -756,6 +758,8 @@
             this.navBarControl2.TabIndex = 3;
             this.navBarControl2.Text = "navBarControl2";
             this.navBarControl2.View = new DevExpress.XtraNavBar.ViewInfo.StandardSkinNavigationPaneViewInfoRegistrator("Office 2016 Dark");
+            this.navBarControl2.NavPaneStateChanged += new System.EventHandler(this.navBarControl2_NavPaneStateChanged);
+            this.navBarControl2.ActiveGroupChanged += new DevExpress.XtraNavBar.NavBarGroupEventHandler(this.navBarControl2_ActiveGroupChanged);
             // 
             // navBarGroup1
             // 
@@ -770,6 +774,8 @@
             this.navBarGroup1.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem1)});
             this.navBarGroup1.Name = "navBarGroup1";
+            this.navBarGroup1.Tag = "1";
+            this.navBarGroup1.TopVisibleLinkIndex = 1;
             this.navBarGroup1.CalcGroupClientHeight += new DevExpress.XtraNavBar.NavBarCalcGroupClientHeightEventHandler(this.navBarGroup1_CalcGroupClientHeight);
             // 
             // navBarGroupControlContainer1
@@ -1069,6 +1075,8 @@
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem13),
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem14)});
             this.navBarGroup6.Name = "navBarGroup6";
+            this.navBarGroup6.Tag = "2";
+            this.navBarGroup6.TopVisibleLinkIndex = 2;
             this.navBarGroup6.CalcGroupClientHeight += new DevExpress.XtraNavBar.NavBarCalcGroupClientHeightEventHandler(this.navBarGroup6_CalcGroupClientHeight);
             // 
             // navBarItem12
@@ -1096,6 +1104,8 @@
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarSeparatorItem2),
             new DevExpress.XtraNavBar.NavBarItemLink(this.navBarItem16)});
             this.navBarGroup7.Name = "navBarGroup7";
+            this.navBarGroup7.Tag = "3";
+            this.navBarGroup7.TopVisibleLinkIndex = 3;
             this.navBarGroup7.CalcGroupClientHeight += new DevExpress.XtraNavBar.NavBarCalcGroupClientHeightEventHandler(this.navBarGroup7_CalcGroupClientHeight);
             // 
             // navBarItem15
@@ -1124,6 +1134,8 @@
             this.navBarGroup8.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("navBarGroup8.ImageOptions.LargeImage")));
             this.navBarGroup8.ImageOptions.SmallImage = ((System.Drawing.Image)(resources.GetObject("navBarGroup8.ImageOptions.SmallImage")));
             this.navBarGroup8.Name = "navBarGroup8";
+            this.navBarGroup8.Tag = "4";
+            this.navBarGroup8.TopVisibleLinkIndex = 4;
             this.navBarGroup8.CalcGroupClientHeight += new DevExpress.XtraNavBar.NavBarCalcGroupClientHeightEventHandler(this.navBarGroup8_CalcGroupClientHeight);
             // 
             // wave_plot
@@ -1413,10 +1425,6 @@
             this.textEdit2.Name = "textEdit2";
             this.textEdit2.Size = new System.Drawing.Size(100, 21);
             this.textEdit2.TabIndex = 4;
-            // 
-            // aaaaaMyDataBindingSource
-            // 
-            this.aaaaaMyDataBindingSource.DataSource = typeof(DXApplication3.aaaaaMyData);
             // 
             // textEdit1
             // 
@@ -1738,6 +1746,10 @@
             this.labelControl3.TabIndex = 0;
             this.labelControl3.Text = "labelControl3";
             // 
+            // aaaaaMyDataBindingSource
+            // 
+            this.aaaaaMyDataBindingSource.DataSource = typeof(DXApplication3.aaaaaMyData);
+            // 
             // toolsBindingSource
             // 
             this.toolsBindingSource.DataSource = typeof(DXApplication3.tools);
@@ -1836,7 +1848,6 @@
             this.navigationPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.aaaaaMyDataBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.form1BindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -1847,6 +1858,7 @@
             this.navigationPage3.PerformLayout();
             this.navigationPage4.ResumeLayout(false);
             this.navigationPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.aaaaaMyDataBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.toolsBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
