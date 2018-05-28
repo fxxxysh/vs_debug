@@ -60,6 +60,7 @@ namespace DXApplication3
             //this.kit_com_connect.DataBindings.Add(binding);
 
             barStaticItem2.Caption = "12312423";
+            navigationFrame1.SelectedPage = navigationPage3;
             while (true)
             {
                 //protected override CheckedItemCollection CheckedItemsCore { get; }
@@ -233,7 +234,110 @@ namespace DXApplication3
 
         private void navBarGroupControlContainer4_MouseEnter(object sender, EventArgs e)
         {
+            dt.Rows[1][1] = "fsaffd";
+        }
 
+        private void gridControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void navigationPage3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        //public DataTable dt123 = new DataTable("个人简历");
+
+        DataTable dt = new DataTable("个人简历");
+        private DataTable InitDt()
+        {
+           // DataTable dt = new DataTable("个人简历");
+
+            dt.Columns.Add("id", typeof(int));
+
+            dt.Columns.Add("name", typeof(string));
+
+            dt.Columns.Add("sex", typeof(int));
+
+            dt.Columns.Add("address", typeof(string));
+
+            dt.Columns.Add("aihao", typeof(string));
+
+            dt.Columns.Add("photo", typeof(string));
+
+            dt.Rows.Add(new object[] { 1, "张三", 1, "东大街6号", "看书", "" });
+
+            dt.Rows.Add(new object[] { 1, "王五", 0, "西大街2号", "上网,游戏", "" });
+
+            dt.Rows.Add(new object[] { 1, "李四", 1, "南大街3号", "上网,逛街", "" });
+
+            dt.Rows.Add(new object[] { 1, "钱八", 0, "北大街5号", "上网,逛街,看书,游戏", "" });
+
+            dt.Rows.Add(new object[] { 1, "赵九", 1, "中大街1号", "看书,逛街,游戏", "" });
+            return dt;
+        }
+
+        private void BindDataSource(DataTable dt)
+        {
+            //绑定DataTable
+
+            gridControl1.DataSource = dt;
+
+            //绑定DataSet
+
+            //gridControl1.DataSource = ds;
+
+            //gridControl1.DataMember = "表名";
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            BindDataSource(InitDt());
+        }
+
+        private void button8_Click1(object sender, EventArgs e)
+        {
+            // 定义主表  
+            DataTable masterTable = new DataTable("MasterTable");
+            DataColumn parentColumn = new DataColumn("masterId", typeof(int));
+            masterTable.Columns.Add(parentColumn);
+            masterTable.Columns.AddRange(new DataColumn[]{
+             new DataColumn("name",typeof(string)),
+            });
+            masterTable.Rows.Add(1, "class1");
+            masterTable.Rows.Add(2, "class2");
+            masterTable.Rows.Add(3, "class3");
+
+            // 定义子表  
+            DataTable detailTable = new DataTable("DetailTable");
+            DataColumn childrenColumn = new DataColumn("masterId", typeof(int));
+            detailTable.Columns.Add(childrenColumn);
+
+            detailTable.Columns.AddRange(new DataColumn[] {
+             new DataColumn("id",typeof(int)),
+             new DataColumn("name",typeof(string)),
+             new DataColumn("age",typeof(string))
+            });
+
+            detailTable.Rows.Add(1, 1, "student1", "age1");
+            detailTable.Rows.Add(2, 2, "student2", "age2");
+            detailTable.Rows.Add(2, 3, "student3", "age3");
+            detailTable.Rows.Add(2, 4, "student4", "age4");
+            detailTable.Rows.Add(3, 5, "student5", "age5");
+            detailTable.Rows.Add(3, 6, "student6", "age6");
+            detailTable.Rows.Add(3, 7, "student7", "age7");
+            detailTable.Rows.Add(3, 8, "student8", "age8");
+
+
+            using (DataSet ds = new DataSet())
+            {
+                ds.Tables.AddRange(new DataTable[] { masterTable.Copy(), detailTable.Copy() });
+                // 创建表关系  
+                DataRelation relation = new DataRelation("detailTable", ds.Tables[0].Columns[0], ds.Tables[1].Columns[0], false);
+                ds.Relations.Add(relation); // 添加  
+                gridControl1.DataSource = ds.Tables[0];  // 指定数据源  
+            }
         }
     }
 }
