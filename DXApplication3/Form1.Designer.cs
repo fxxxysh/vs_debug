@@ -29,25 +29,21 @@
         ///
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.tabFormPage1 = new DevExpress.XtraBars.TabFormPage();
-            this.ribbonControl1 = new DevExpress.XtraBars.Ribbon.RibbonControl();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
-            this.barToggleSwitchItem1 = new DevExpress.XtraBars.BarToggleSwitchItem();
-            this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
-            this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
+            this.navigationFrame1 = new DevExpress.XtraBars.Navigation.NavigationFrame();
+            this.navigationPage1 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
+            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.bandedGridView1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridView();
+            this.gridBand1 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
+            ((System.ComponentModel.ISupportInitialize)(this.navigationFrame1)).BeginInit();
+            this.navigationFrame1.SuspendLayout();
+            this.navigationPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bandedGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // defaultLookAndFeel1
-            // 
-            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2016 Dark";
             // 
             // ribbonPage2
             // 
@@ -59,81 +55,54 @@
             this.tabFormPage1.Name = "tabFormPage1";
             this.tabFormPage1.Text = "Page 0";
             // 
-            // ribbonControl1
-            // 
-            this.ribbonControl1.ExpandCollapseItem.Id = 0;
-            this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
-            this.ribbonControl1.ExpandCollapseItem,
-            this.barButtonItem1,
-            this.barButtonItem2,
-            this.barButtonItem3,
-            this.barToggleSwitchItem1});
-            this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl1.MaxItemId = 6;
-            this.ribbonControl1.Name = "ribbonControl1";
-            this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
-            this.ribbonPage1});
-            this.ribbonControl1.QuickToolbarItemLinks.Add(this.barButtonItem2);
-            this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl1.ShowDisplayOptionsMenuButton = DevExpress.Utils.DefaultBoolean.True;
-            this.ribbonControl1.ShowExpandCollapseButton = DevExpress.Utils.DefaultBoolean.False;
-            this.ribbonControl1.ShowItemCaptionsInPageHeader = true;
-            this.ribbonControl1.ShowItemCaptionsInQAT = true;
-            this.ribbonControl1.ShowPageHeadersInFormCaption = DevExpress.Utils.DefaultBoolean.True;
-            this.ribbonControl1.ShowPageHeadersMode = DevExpress.XtraBars.Ribbon.ShowPageHeadersMode.Show;
-            this.ribbonControl1.ShowQatLocationSelector = false;
-            this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(907, 150);
-            this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
-            // 
-            // barButtonItem1
-            // 
-            this.barButtonItem1.Caption = "barButtonItem1";
-            this.barButtonItem1.Id = 2;
-            this.barButtonItem1.Name = "barButtonItem1";
-            // 
-            // barButtonItem2
-            // 
-            this.barButtonItem2.Caption = "barButtonItem2";
-            this.barButtonItem2.Id = 3;
-            this.barButtonItem2.Name = "barButtonItem2";
-            // 
-            // barButtonItem3
-            // 
-            this.barButtonItem3.Caption = "barButtonItem3";
-            this.barButtonItem3.Id = 4;
-            this.barButtonItem3.Name = "barButtonItem3";
-            // 
-            // barToggleSwitchItem1
-            // 
-            this.barToggleSwitchItem1.Caption = "barToggleSwitchItem1";
-            this.barToggleSwitchItem1.Id = 5;
-            this.barToggleSwitchItem1.Name = "barToggleSwitchItem1";
-            // 
-            // ribbonPage1
-            // 
-            this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
-            this.ribbonPageGroup1,
-            this.ribbonPageGroup2});
-            this.ribbonPage1.Name = "ribbonPage1";
-            this.ribbonPage1.Text = "ribbonPage1";
-            // 
-            // ribbonPageGroup1
-            // 
-            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem3);
-            this.ribbonPageGroup1.Name = "ribbonPageGroup1";
-            this.ribbonPageGroup1.Text = "ribbonPageGroup1";
-            // 
-            // ribbonPageGroup2
-            // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.barToggleSwitchItem1);
-            this.ribbonPageGroup2.Name = "ribbonPageGroup2";
-            this.ribbonPageGroup2.Text = "ribbonPageGroup2";
-            // 
             // ribbonPage3
             // 
             this.ribbonPage3.Name = "ribbonPage3";
             this.ribbonPage3.Text = "ribbonPage3";
+            // 
+            // navigationFrame1
+            // 
+            this.navigationFrame1.Controls.Add(this.navigationPage1);
+            this.navigationFrame1.Location = new System.Drawing.Point(154, 145);
+            this.navigationFrame1.Name = "navigationFrame1";
+            this.navigationFrame1.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
+            this.navigationPage1});
+            this.navigationFrame1.SelectedPage = this.navigationPage1;
+            this.navigationFrame1.Size = new System.Drawing.Size(517, 313);
+            this.navigationFrame1.TabIndex = 0;
+            this.navigationFrame1.Text = "navigationFrame1";
+            // 
+            // navigationPage1
+            // 
+            this.navigationPage1.Controls.Add(this.gridControl1);
+            this.navigationPage1.Name = "navigationPage1";
+            this.navigationPage1.Size = new System.Drawing.Size(517, 313);
+            // 
+            // gridControl1
+            // 
+            this.gridControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridControl1.Location = new System.Drawing.Point(24, 18);
+            this.gridControl1.MainView = this.bandedGridView1;
+            this.gridControl1.Name = "gridControl1";
+            this.gridControl1.Size = new System.Drawing.Size(400, 200);
+            this.gridControl1.TabIndex = 0;
+            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.bandedGridView1});
+            // 
+            // bandedGridView1
+            // 
+            this.bandedGridView1.Bands.AddRange(new DevExpress.XtraGrid.Views.BandedGrid.GridBand[] {
+            this.gridBand1});
+            this.bandedGridView1.GridControl = this.gridControl1;
+            this.bandedGridView1.Name = "bandedGridView1";
+            this.bandedGridView1.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridBand1
+            // 
+            this.gridBand1.Caption = "gridBand1";
+            this.gridBand1.Name = "gridBand1";
+            this.gridBand1.VisibleIndex = 0;
             // 
             // Form1
             // 
@@ -143,29 +112,28 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(907, 600);
-            this.Controls.Add(this.ribbonControl1);
+            this.Controls.Add(this.navigationFrame1);
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.None;
             this.Name = "Form1";
-            this.Ribbon = this.ribbonControl1;
-            ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.navigationFrame1)).EndInit();
+            this.navigationFrame1.ResumeLayout(false);
+            this.navigationPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bandedGridView1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage2;
         private DevExpress.XtraBars.TabFormPage tabFormPage1;
-        private DevExpress.XtraBars.Ribbon.RibbonControl ribbonControl1;
-        private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage1;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup1;
-        private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
         private DevExpress.XtraBars.Ribbon.RibbonPage ribbonPage3;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
-        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
-        private DevExpress.XtraBars.BarToggleSwitchItem barToggleSwitchItem1;
+        private DevExpress.XtraBars.Navigation.NavigationFrame navigationFrame1;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage1;
+        private System.Windows.Forms.PageSetupDialog pageSetupDialog1;
+        private DevExpress.XtraGrid.GridControl gridControl1;
+        private DevExpress.XtraGrid.Views.BandedGrid.BandedGridView bandedGridView1;
+        private DevExpress.XtraGrid.Views.BandedGrid.GridBand gridBand1;
     }
 
 }

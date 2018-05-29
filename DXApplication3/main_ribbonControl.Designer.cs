@@ -240,7 +240,7 @@
             // 
             // defaultLookAndFeel1
             // 
-            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2013 Dark Gray";
+            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Office 2016 Dark";
             // 
             // ribbonControl1
             // 
@@ -304,7 +304,7 @@
             this.repositoryItemTextEdit2});
             this.ribbonControl1.ShowApplicationButton = DevExpress.Utils.DefaultBoolean.False;
             this.ribbonControl1.ShowToolbarCustomizeItem = false;
-            this.ribbonControl1.Size = new System.Drawing.Size(1165, 151);
+            this.ribbonControl1.Size = new System.Drawing.Size(1165, 150);
             this.ribbonControl1.Toolbar.ShowCustomizeItem = false;
             this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
             // 
@@ -790,11 +790,11 @@
             this.navBarItem16,
             this.navBarItem1});
             this.navBarControl2.LinkInterval = 4;
-            this.navBarControl2.Location = new System.Drawing.Point(0, 151);
+            this.navBarControl2.Location = new System.Drawing.Point(0, 150);
             this.navBarControl2.Name = "navBarControl2";
             this.navBarControl2.OptionsNavPane.ExpandedWidth = 240;
             this.navBarControl2.PaintStyleKind = DevExpress.XtraNavBar.NavBarViewKind.NavigationPane;
-            this.navBarControl2.Size = new System.Drawing.Size(240, 545);
+            this.navBarControl2.Size = new System.Drawing.Size(240, 546);
             this.navBarControl2.TabIndex = 1;
             this.navBarControl2.Text = "navBarControl2";
             this.navBarControl2.View = new DevExpress.XtraNavBar.ViewInfo.StandardSkinNavigationPaneViewInfoRegistrator("Office 2016 Dark");
@@ -826,7 +826,7 @@
             this.navBarGroupControlContainer1.Appearance.Options.UseBackColor = true;
             this.navBarGroupControlContainer1.Controls.Add(this.panel2);
             this.navBarGroupControlContainer1.Name = "navBarGroupControlContainer1";
-            this.navBarGroupControlContainer1.Size = new System.Drawing.Size(240, 353);
+            this.navBarGroupControlContainer1.Size = new System.Drawing.Size(240, 317);
             this.navBarGroupControlContainer1.TabIndex = 1;
             // 
             // panel2
@@ -1290,7 +1290,7 @@
             this.wave_plot.Location = new System.Drawing.Point(0, 26);
             this.wave_plot.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
             this.wave_plot.Name = "wave_plot";
-            this.wave_plot.Size = new System.Drawing.Size(924, 519);
+            this.wave_plot.Size = new System.Drawing.Size(924, 520);
             this.wave_plot.TabIndex = 1;
             this.wave_plot.UpdateFrameRate = 25D;
             plotXAxis1.CanFocus = false;
@@ -1407,21 +1407,21 @@
             this.navigationFrame1.Controls.Add(this.navigationPage2);
             this.navigationFrame1.Controls.Add(this.navigationPage3);
             this.navigationFrame1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.navigationFrame1.Location = new System.Drawing.Point(240, 151);
+            this.navigationFrame1.Location = new System.Drawing.Point(240, 150);
             this.navigationFrame1.Name = "navigationFrame1";
             this.navigationFrame1.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
             this.navigationPage1,
             this.navigationPage2,
             this.navigationPage3});
             this.navigationFrame1.SelectedPage = this.navigationPage2;
-            this.navigationFrame1.Size = new System.Drawing.Size(925, 545);
+            this.navigationFrame1.Size = new System.Drawing.Size(925, 546);
             this.navigationFrame1.TabIndex = 6;
             this.navigationFrame1.Text = "navigationFrame1";
             // 
             // navigationPage1
             // 
             this.navigationPage1.Name = "navigationPage1";
-            this.navigationPage1.Size = new System.Drawing.Size(925, 545);
+            this.navigationPage1.Size = new System.Drawing.Size(925, 546);
             // 
             // navigationPage2
             // 
@@ -1429,7 +1429,7 @@
             this.navigationPage2.Controls.Add(this.wave_plot);
             this.navigationPage2.Margin = new System.Windows.Forms.Padding(0);
             this.navigationPage2.Name = "navigationPage2";
-            this.navigationPage2.Size = new System.Drawing.Size(925, 545);
+            this.navigationPage2.Size = new System.Drawing.Size(925, 546);
             // 
             // panel1
             // 
@@ -1695,7 +1695,7 @@
             // 
             this.navigationPage3.Controls.Add(this.gridControl1);
             this.navigationPage3.Name = "navigationPage3";
-            this.navigationPage3.Size = new System.Drawing.Size(925, 545);
+            this.navigationPage3.Size = new System.Drawing.Size(925, 546);
             this.navigationPage3.Paint += new System.Windows.Forms.PaintEventHandler(this.navigationPage3_Paint);
             // 
             // gridControl1
@@ -1703,7 +1703,7 @@
             gridLevelNode1.RelationName = "Level1";
             this.gridControl1.LevelTree.Nodes.AddRange(new DevExpress.XtraGrid.GridLevelNode[] {
             gridLevelNode1});
-            this.gridControl1.Location = new System.Drawing.Point(7, 7);
+            this.gridControl1.Location = new System.Drawing.Point(17, 77);
             this.gridControl1.MainView = this.bandedGridView1;
             this.gridControl1.MenuManager = this.ribbonControl1;
             this.gridControl1.Name = "gridControl1";
