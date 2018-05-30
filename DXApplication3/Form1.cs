@@ -28,7 +28,7 @@ namespace DXApplication3
             //BaseLayoutItem aboutItem = flatList.First(e => e.Text == "About");
             //aboutItem.TextLocation = DevExpress.Utils.Locations.Top;
            // this.ribbonControl1.ToolbarLocation = DevExpress.XtraBars.Ribbon.RibbonQuickAccessToolbarLocation.Hidden;
-            this.ribbonControl1.Minimized = true;
+          //  this.ribbonControl1.Minimized = true;
         }
         static List<Employee> GetDataSource()
         {

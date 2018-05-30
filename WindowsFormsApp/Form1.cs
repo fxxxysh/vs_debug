@@ -105,19 +105,19 @@ namespace WindowsFormsApp
             // xtraTabPage1
             // 
             this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(815, 398);
+            this.xtraTabPage1.Size = new System.Drawing.Size(827, 405);
             this.xtraTabPage1.Text = "xtraTabPage1";
             // 
             // xtraTabPage2
             // 
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(815, 398);
+            this.xtraTabPage2.Size = new System.Drawing.Size(827, 405);
             this.xtraTabPage2.Text = "xtraTabPage2";
             // 
             // xtraTabPage3
             // 
             this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(815, 398);
+            this.xtraTabPage3.Size = new System.Drawing.Size(827, 405);
             this.xtraTabPage3.Text = "xtraTabPage3";
             // 
             // xtraTabPage4
