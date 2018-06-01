@@ -29,20 +29,21 @@
         ///
         private void InitializeComponent()
         {
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
-            DevExpress.XtraGrid.GridFormatRule gridFormatRule3 = new DevExpress.XtraGrid.GridFormatRule();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             DevExpress.XtraCharts.SwiftPlotDiagram swiftPlotDiagram1 = new DevExpress.XtraCharts.SwiftPlotDiagram();
             DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
             DevExpress.XtraCharts.SwiftPlotSeriesView swiftPlotSeriesView1 = new DevExpress.XtraCharts.SwiftPlotSeriesView();
             DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
             DevExpress.XtraCharts.SwiftPlotSeriesView swiftPlotSeriesView2 = new DevExpress.XtraCharts.SwiftPlotSeriesView();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule1 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
+            DevExpress.XtraGrid.GridFormatRule gridFormatRule3 = new DevExpress.XtraGrid.GridFormatRule();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.tabFormPage1 = new DevExpress.XtraBars.TabFormPage();
             this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.navigationFrame1 = new DevExpress.XtraBars.Navigation.NavigationFrame();
             this.navigationPage1 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.bandedGridView1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridView();
             this.gridBand1 = new DevExpress.XtraGrid.Views.BandedGrid.GridBand();
@@ -84,10 +85,16 @@
             this.navigationPage2 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.navigationPage3 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
-            this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
+            this.gyro_calib_Button1 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame1)).BeginInit();
             this.navigationFrame1.SuspendLayout();
             this.navigationPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(swiftPlotDiagram1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(swiftPlotSeriesView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(swiftPlotSeriesView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bandedGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).BeginInit();
@@ -109,12 +116,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.buttonEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(swiftPlotDiagram1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(swiftPlotSeriesView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(swiftPlotSeriesView2)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonPage2
@@ -147,6 +148,8 @@
             // 
             // navigationPage1
             // 
+            this.navigationPage1.Caption = "navigationPage1";
+            this.navigationPage1.Controls.Add(this.gyro_calib_Button1);
             this.navigationPage1.Controls.Add(this.chartControl1);
             this.navigationPage1.Controls.Add(this.gridControl1);
             this.navigationPage1.Controls.Add(this.kit_nav_bar);
@@ -155,6 +158,29 @@
             this.navigationPage1.Controls.Add(this.navigationPane1);
             this.navigationPage1.Name = "navigationPage1";
             this.navigationPage1.Size = new System.Drawing.Size(907, 600);
+            // 
+            // chartControl1
+            // 
+            swiftPlotDiagram1.AxisX.Visibility = DevExpress.Utils.DefaultBoolean.True;
+            swiftPlotDiagram1.AxisX.VisibleInPanesSerializable = "-1";
+            swiftPlotDiagram1.AxisY.VisibleInPanesSerializable = "-1";
+            swiftPlotDiagram1.EnableAxisXScrolling = true;
+            swiftPlotDiagram1.EnableAxisXZooming = true;
+            swiftPlotDiagram1.EnableAxisYScrolling = true;
+            swiftPlotDiagram1.EnableAxisYZooming = true;
+            this.chartControl1.Diagram = swiftPlotDiagram1;
+            this.chartControl1.Legend.Name = "Default Legend";
+            this.chartControl1.Location = new System.Drawing.Point(238, 330);
+            this.chartControl1.Name = "chartControl1";
+            series1.Name = "Series 1";
+            series1.View = swiftPlotSeriesView1;
+            series2.Name = "Series 2";
+            series2.View = swiftPlotSeriesView2;
+            this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
+        series1,
+        series2};
+            this.chartControl1.Size = new System.Drawing.Size(604, 235);
+            this.chartControl1.TabIndex = 13;
             // 
             // gridControl1
             // 
@@ -296,7 +322,7 @@
             this.navBarGroupControlContainer1.Controls.Add(this.panelControl1);
             this.navBarGroupControlContainer1.Controls.Add(this.in_nav_msg);
             this.navBarGroupControlContainer1.Name = "navBarGroupControlContainer1";
-            this.navBarGroupControlContainer1.Size = new System.Drawing.Size(220, 372);
+            this.navBarGroupControlContainer1.Size = new System.Drawing.Size(220, 405);
             this.navBarGroupControlContainer1.TabIndex = 0;
             // 
             // panelControl1
@@ -309,7 +335,7 @@
             this.panelControl1.Controls.Add(this.simpleButton2);
             this.panelControl1.Controls.Add(this.dropDownButton1);
             this.panelControl1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panelControl1.Location = new System.Drawing.Point(-1, 260);
+            this.panelControl1.Location = new System.Drawing.Point(-1, 293);
             this.panelControl1.Margin = new System.Windows.Forms.Padding(0);
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(222, 112);
@@ -370,7 +396,7 @@
             this.in_nav_msg.Margin = new System.Windows.Forms.Padding(0);
             this.in_nav_msg.Name = "in_nav_msg";
             this.in_nav_msg.OptionsNavPane.ExpandedWidth = 220;
-            this.in_nav_msg.Size = new System.Drawing.Size(220, 260);
+            this.in_nav_msg.Size = new System.Drawing.Size(220, 293);
             this.in_nav_msg.TabIndex = 0;
             this.in_nav_msg.Text = "navBarControl2";
             // 
@@ -528,7 +554,7 @@
             this.navigationPage3});
             this.navigationPane1.RegularSize = new System.Drawing.Size(300, 258);
             this.navigationPane1.SelectedPage = this.navigationPage3;
-            this.navigationPane1.Size = new System.Drawing.Size(110, 258);
+            this.navigationPane1.Size = new System.Drawing.Size(105, 258);
             this.navigationPane1.State = DevExpress.XtraBars.Navigation.NavigationPaneState.Collapsed;
             this.navigationPane1.TabIndex = 1;
             this.navigationPane1.Text = "navigationPane1";
@@ -545,28 +571,16 @@
             this.navigationPage3.Name = "navigationPage3";
             this.navigationPage3.Size = new System.Drawing.Size(0, 0);
             // 
-            // chartControl1
+            // gyro_calib_Button1
             // 
-            swiftPlotDiagram1.AxisX.Visibility = DevExpress.Utils.DefaultBoolean.True;
-            swiftPlotDiagram1.AxisX.VisibleInPanesSerializable = "-1";
-            swiftPlotDiagram1.AxisY.VisibleInPanesSerializable = "-1";
-            swiftPlotDiagram1.EnableAxisXScrolling = true;
-            swiftPlotDiagram1.EnableAxisXZooming = true;
-            swiftPlotDiagram1.EnableAxisYScrolling = true;
-            swiftPlotDiagram1.EnableAxisYZooming = true;
-            this.chartControl1.Diagram = swiftPlotDiagram1;
-            this.chartControl1.Legend.Name = "Default Legend";
-            this.chartControl1.Location = new System.Drawing.Point(238, 330);
-            this.chartControl1.Name = "chartControl1";
-            series1.Name = "Series 1";
-            series1.View = swiftPlotSeriesView1;
-            series2.Name = "Series 2";
-            series2.View = swiftPlotSeriesView2;
-            this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series1,
-        series2};
-            this.chartControl1.Size = new System.Drawing.Size(604, 235);
-            this.chartControl1.TabIndex = 13;
+            this.gyro_calib_Button1.AllowFocus = false;
+            this.gyro_calib_Button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.gyro_calib_Button1.Location = new System.Drawing.Point(413, 288);
+            this.gyro_calib_Button1.Name = "gyro_calib_Button1";
+            this.gyro_calib_Button1.Size = new System.Drawing.Size(80, 25);
+            this.gyro_calib_Button1.TabIndex = 14;
+            this.gyro_calib_Button1.Text = "零偏校准";
+            this.gyro_calib_Button1.Click += new System.EventHandler(this.gyro_calib_Button1_Click);
             // 
             // Form1
             // 
@@ -582,6 +596,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame1)).EndInit();
             this.navigationFrame1.ResumeLayout(false);
             this.navigationPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(swiftPlotDiagram1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(swiftPlotSeriesView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(swiftPlotSeriesView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bandedGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemTextEdit1)).EndInit();
@@ -603,12 +623,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.buttonEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).EndInit();
             this.navigationPane1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(swiftPlotDiagram1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(swiftPlotSeriesView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(swiftPlotSeriesView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -661,6 +675,7 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
         private DevExpress.XtraCharts.ChartControl chartControl1;
+        private DevExpress.XtraEditors.SimpleButton gyro_calib_Button1;
     }
 
 }
