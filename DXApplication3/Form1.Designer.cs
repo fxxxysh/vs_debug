@@ -38,11 +38,22 @@
             DevExpress.XtraGrid.GridFormatRule gridFormatRule2 = new DevExpress.XtraGrid.GridFormatRule();
             DevExpress.XtraGrid.GridFormatRule gridFormatRule3 = new DevExpress.XtraGrid.GridFormatRule();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            DevExpress.XtraCharts.XYDiagram3D xyDiagram3D1 = new DevExpress.XtraCharts.XYDiagram3D();
+            DevExpress.XtraCharts.Series series3 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.SeriesPoint seriesPoint1 = new DevExpress.XtraCharts.SeriesPoint(0D, new object[] {
+            ((object)(45D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint2 = new DevExpress.XtraCharts.SeriesPoint(0D, new object[] {
+            ((object)(55D))});
+            DevExpress.XtraCharts.SeriesPoint seriesPoint3 = new DevExpress.XtraCharts.SeriesPoint(0D, new object[] {
+            ((object)(34D))});
+            DevExpress.XtraCharts.SideBySideBar3DSeriesView sideBySideBar3DSeriesView1 = new DevExpress.XtraCharts.SideBySideBar3DSeriesView();
+            DevExpress.XtraCharts.SideBySideBar3DSeriesView sideBySideBar3DSeriesView2 = new DevExpress.XtraCharts.SideBySideBar3DSeriesView();
             this.ribbonPage2 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.tabFormPage1 = new DevExpress.XtraBars.TabFormPage();
             this.ribbonPage3 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.navigationFrame1 = new DevExpress.XtraBars.Navigation.NavigationFrame();
             this.navigationPage1 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.gyro_calib_Button1 = new DevExpress.XtraEditors.SimpleButton();
             this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.bandedGridView1 = new DevExpress.XtraGrid.Views.BandedGrid.BandedGridView();
@@ -57,7 +68,9 @@
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.kit_nav_bar = new DevExpress.XtraNavBar.NavBarControl();
-            this.nav_wave = new DevExpress.XtraNavBar.NavBarGroup();
+            this.nav_control = new DevExpress.XtraNavBar.NavBarGroup();
+            this.ahrs_navBarItem = new DevExpress.XtraNavBar.NavBarItem();
+            this.mot_navBarItem = new DevExpress.XtraNavBar.NavBarItem();
             this.navBarGroupControlContainer1 = new DevExpress.XtraNavBar.NavBarGroupControlContainer();
             this.panelControl1 = new DevExpress.XtraEditors.PanelControl();
             this.checkEdit2 = new DevExpress.XtraEditors.CheckEdit();
@@ -74,18 +87,17 @@
             this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.in_nav_params = new DevExpress.XtraNavBar.NavBarControl();
+            this.nav_wave = new DevExpress.XtraNavBar.NavBarGroup();
             this.nav_data = new DevExpress.XtraNavBar.NavBarGroup();
             this.nav_params = new DevExpress.XtraNavBar.NavBarGroup();
-            this.nav_control = new DevExpress.XtraNavBar.NavBarGroup();
-            this.ahrs_navBarItem = new DevExpress.XtraNavBar.NavBarItem();
-            this.mot_navBarItem = new DevExpress.XtraNavBar.NavBarItem();
             this.buttonEdit1 = new DevExpress.XtraEditors.ButtonEdit();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.navigationPane1 = new DevExpress.XtraBars.Navigation.NavigationPane();
             this.navigationPage2 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.navigationPage3 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
-            this.gyro_calib_Button1 = new DevExpress.XtraEditors.SimpleButton();
+            this.navigationPage4 = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.chartControl2 = new DevExpress.XtraCharts.ChartControl();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame1)).BeginInit();
             this.navigationFrame1.SuspendLayout();
             this.navigationPage1.SuspendLayout();
@@ -116,6 +128,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.buttonEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).BeginInit();
             this.navigationPane1.SuspendLayout();
+            this.navigationPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartControl2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram3D1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBar3DSeriesView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBar3DSeriesView2)).BeginInit();
             this.SuspendLayout();
             // 
             // ribbonPage2
@@ -136,11 +154,13 @@
             // navigationFrame1
             // 
             this.navigationFrame1.Controls.Add(this.navigationPage1);
+            this.navigationFrame1.Controls.Add(this.navigationPage4);
             this.navigationFrame1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.navigationFrame1.Location = new System.Drawing.Point(0, 0);
             this.navigationFrame1.Name = "navigationFrame1";
             this.navigationFrame1.Pages.AddRange(new DevExpress.XtraBars.Navigation.NavigationPageBase[] {
-            this.navigationPage1});
+            this.navigationPage1,
+            this.navigationPage4});
             this.navigationFrame1.SelectedPage = this.navigationPage1;
             this.navigationFrame1.Size = new System.Drawing.Size(907, 600);
             this.navigationFrame1.TabIndex = 0;
@@ -148,7 +168,6 @@
             // 
             // navigationPage1
             // 
-            this.navigationPage1.Caption = "navigationPage1";
             this.navigationPage1.Controls.Add(this.gyro_calib_Button1);
             this.navigationPage1.Controls.Add(this.chartControl1);
             this.navigationPage1.Controls.Add(this.gridControl1);
@@ -158,6 +177,17 @@
             this.navigationPage1.Controls.Add(this.navigationPane1);
             this.navigationPage1.Name = "navigationPage1";
             this.navigationPage1.Size = new System.Drawing.Size(907, 600);
+            // 
+            // gyro_calib_Button1
+            // 
+            this.gyro_calib_Button1.AllowFocus = false;
+            this.gyro_calib_Button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.gyro_calib_Button1.Location = new System.Drawing.Point(413, 288);
+            this.gyro_calib_Button1.Name = "gyro_calib_Button1";
+            this.gyro_calib_Button1.Size = new System.Drawing.Size(80, 25);
+            this.gyro_calib_Button1.TabIndex = 14;
+            this.gyro_calib_Button1.Text = "零偏校准";
+            this.gyro_calib_Button1.Click += new System.EventHandler(this.gyro_calib_Button1_Click);
             // 
             // chartControl1
             // 
@@ -282,7 +312,7 @@
             // 
             // kit_nav_bar
             // 
-            this.kit_nav_bar.ActiveGroup = this.nav_wave;
+            this.kit_nav_bar.ActiveGroup = this.nav_control;
             this.kit_nav_bar.Controls.Add(this.navBarGroupControlContainer1);
             this.kit_nav_bar.Controls.Add(this.navBarGroupControlContainer5);
             this.kit_nav_bar.Controls.Add(this.navBarGroupControlContainer6);
@@ -304,16 +334,27 @@
             this.kit_nav_bar.TabIndex = 11;
             this.kit_nav_bar.Text = "navBarControl1";
             // 
-            // nav_wave
+            // nav_control
             // 
-            this.nav_wave.Caption = "波形";
-            this.nav_wave.ControlContainer = this.navBarGroupControlContainer1;
-            this.nav_wave.Expanded = true;
-            this.nav_wave.GroupClientHeight = 80;
-            this.nav_wave.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
-            this.nav_wave.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("nav_wave.ImageOptions.LargeImage")));
-            this.nav_wave.ImageOptions.SmallImage = ((System.Drawing.Image)(resources.GetObject("nav_wave.ImageOptions.SmallImage")));
-            this.nav_wave.Name = "nav_wave";
+            this.nav_control.Caption = "控制";
+            this.nav_control.Expanded = true;
+            this.nav_control.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.SmallIconsText;
+            this.nav_control.ImageOptions.SmallImage = ((System.Drawing.Image)(resources.GetObject("nav_control.ImageOptions.SmallImage")));
+            this.nav_control.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
+            new DevExpress.XtraNavBar.NavBarItemLink(this.ahrs_navBarItem),
+            new DevExpress.XtraNavBar.NavBarItemLink(this.mot_navBarItem)});
+            this.nav_control.Name = "nav_control";
+            // 
+            // ahrs_navBarItem
+            // 
+            this.ahrs_navBarItem.Caption = "AHRS";
+            this.ahrs_navBarItem.Name = "ahrs_navBarItem";
+            // 
+            // mot_navBarItem
+            // 
+            this.mot_navBarItem.Caption = "MOT";
+            this.mot_navBarItem.ImageOptions.SmallImage = ((System.Drawing.Image)(resources.GetObject("mot_navBarItem.ImageOptions.SmallImage")));
+            this.mot_navBarItem.Name = "mot_navBarItem";
             // 
             // navBarGroupControlContainer1
             // 
@@ -322,7 +363,7 @@
             this.navBarGroupControlContainer1.Controls.Add(this.panelControl1);
             this.navBarGroupControlContainer1.Controls.Add(this.in_nav_msg);
             this.navBarGroupControlContainer1.Name = "navBarGroupControlContainer1";
-            this.navBarGroupControlContainer1.Size = new System.Drawing.Size(220, 405);
+            this.navBarGroupControlContainer1.Size = new System.Drawing.Size(220, 371);
             this.navBarGroupControlContainer1.TabIndex = 0;
             // 
             // panelControl1
@@ -335,7 +376,7 @@
             this.panelControl1.Controls.Add(this.simpleButton2);
             this.panelControl1.Controls.Add(this.dropDownButton1);
             this.panelControl1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panelControl1.Location = new System.Drawing.Point(-1, 293);
+            this.panelControl1.Location = new System.Drawing.Point(-1, 259);
             this.panelControl1.Margin = new System.Windows.Forms.Padding(0);
             this.panelControl1.Name = "panelControl1";
             this.panelControl1.Size = new System.Drawing.Size(222, 112);
@@ -396,7 +437,7 @@
             this.in_nav_msg.Margin = new System.Windows.Forms.Padding(0);
             this.in_nav_msg.Name = "in_nav_msg";
             this.in_nav_msg.OptionsNavPane.ExpandedWidth = 220;
-            this.in_nav_msg.Size = new System.Drawing.Size(220, 293);
+            this.in_nav_msg.Size = new System.Drawing.Size(220, 259);
             this.in_nav_msg.TabIndex = 0;
             this.in_nav_msg.Text = "navBarControl2";
             // 
@@ -411,7 +452,7 @@
             this.navBarGroupControlContainer5.Appearance.BackColor = System.Drawing.SystemColors.Control;
             this.navBarGroupControlContainer5.Appearance.Options.UseBackColor = true;
             this.navBarGroupControlContainer5.Name = "navBarGroupControlContainer5";
-            this.navBarGroupControlContainer5.Size = new System.Drawing.Size(220, 362);
+            this.navBarGroupControlContainer5.Size = new System.Drawing.Size(220, 371);
             this.navBarGroupControlContainer5.TabIndex = 1;
             // 
             // navBarGroupControlContainer6
@@ -421,7 +462,7 @@
             this.navBarGroupControlContainer6.Controls.Add(this.panelControl2);
             this.navBarGroupControlContainer6.Controls.Add(this.in_nav_params);
             this.navBarGroupControlContainer6.Name = "navBarGroupControlContainer6";
-            this.navBarGroupControlContainer6.Size = new System.Drawing.Size(220, 362);
+            this.navBarGroupControlContainer6.Size = new System.Drawing.Size(220, 371);
             this.navBarGroupControlContainer6.TabIndex = 2;
             // 
             // panelControl2
@@ -432,7 +473,7 @@
             this.panelControl2.Controls.Add(this.simpleButton5);
             this.panelControl2.Controls.Add(this.simpleButton3);
             this.panelControl2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panelControl2.Location = new System.Drawing.Point(-1, 292);
+            this.panelControl2.Location = new System.Drawing.Point(-1, 301);
             this.panelControl2.Margin = new System.Windows.Forms.Padding(0);
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(222, 70);
@@ -479,9 +520,19 @@
             this.in_nav_params.Margin = new System.Windows.Forms.Padding(0);
             this.in_nav_params.Name = "in_nav_params";
             this.in_nav_params.OptionsNavPane.ExpandedWidth = 220;
-            this.in_nav_params.Size = new System.Drawing.Size(220, 292);
+            this.in_nav_params.Size = new System.Drawing.Size(220, 301);
             this.in_nav_params.TabIndex = 6;
             this.in_nav_params.Text = "navBarControl2";
+            // 
+            // nav_wave
+            // 
+            this.nav_wave.Caption = "波形";
+            this.nav_wave.ControlContainer = this.navBarGroupControlContainer1;
+            this.nav_wave.GroupClientHeight = 80;
+            this.nav_wave.GroupStyle = DevExpress.XtraNavBar.NavBarGroupStyle.ControlContainer;
+            this.nav_wave.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("nav_wave.ImageOptions.LargeImage")));
+            this.nav_wave.ImageOptions.SmallImage = ((System.Drawing.Image)(resources.GetObject("nav_wave.ImageOptions.SmallImage")));
+            this.nav_wave.Name = "nav_wave";
             // 
             // nav_data
             // 
@@ -502,26 +553,6 @@
             this.nav_params.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("nav_params.ImageOptions.LargeImage")));
             this.nav_params.ImageOptions.SmallImage = ((System.Drawing.Image)(resources.GetObject("nav_params.ImageOptions.SmallImage")));
             this.nav_params.Name = "nav_params";
-            // 
-            // nav_control
-            // 
-            this.nav_control.Caption = "控制";
-            this.nav_control.ImageOptions.SmallImage = ((System.Drawing.Image)(resources.GetObject("nav_control.ImageOptions.SmallImage")));
-            this.nav_control.ItemLinks.AddRange(new DevExpress.XtraNavBar.NavBarItemLink[] {
-            new DevExpress.XtraNavBar.NavBarItemLink(this.ahrs_navBarItem),
-            new DevExpress.XtraNavBar.NavBarItemLink(this.mot_navBarItem)});
-            this.nav_control.Name = "nav_control";
-            // 
-            // ahrs_navBarItem
-            // 
-            this.ahrs_navBarItem.Caption = "AHRS";
-            this.ahrs_navBarItem.Name = "ahrs_navBarItem";
-            // 
-            // mot_navBarItem
-            // 
-            this.mot_navBarItem.Caption = "MOT";
-            this.mot_navBarItem.ImageOptions.SmallImage = ((System.Drawing.Image)(resources.GetObject("mot_navBarItem.ImageOptions.SmallImage")));
-            this.mot_navBarItem.Name = "mot_navBarItem";
             // 
             // buttonEdit1
             // 
@@ -554,7 +585,7 @@
             this.navigationPage3});
             this.navigationPane1.RegularSize = new System.Drawing.Size(300, 258);
             this.navigationPane1.SelectedPage = this.navigationPage3;
-            this.navigationPane1.Size = new System.Drawing.Size(105, 258);
+            this.navigationPane1.Size = new System.Drawing.Size(110, 258);
             this.navigationPane1.State = DevExpress.XtraBars.Navigation.NavigationPaneState.Collapsed;
             this.navigationPane1.TabIndex = 1;
             this.navigationPane1.Text = "navigationPane1";
@@ -571,16 +602,33 @@
             this.navigationPage3.Name = "navigationPage3";
             this.navigationPage3.Size = new System.Drawing.Size(0, 0);
             // 
-            // gyro_calib_Button1
+            // navigationPage4
             // 
-            this.gyro_calib_Button1.AllowFocus = false;
-            this.gyro_calib_Button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.gyro_calib_Button1.Location = new System.Drawing.Point(413, 288);
-            this.gyro_calib_Button1.Name = "gyro_calib_Button1";
-            this.gyro_calib_Button1.Size = new System.Drawing.Size(80, 25);
-            this.gyro_calib_Button1.TabIndex = 14;
-            this.gyro_calib_Button1.Text = "零偏校准";
-            this.gyro_calib_Button1.Click += new System.EventHandler(this.gyro_calib_Button1_Click);
+            this.navigationPage4.Controls.Add(this.chartControl2);
+            this.navigationPage4.Name = "navigationPage4";
+            this.navigationPage4.Size = new System.Drawing.Size(907, 600);
+            // 
+            // chartControl2
+            // 
+            xyDiagram3D1.RotationMatrixSerializable = "0.766044443118978;-0.219846310392954;0.604022773555054;0;0;0.939692620785908;0.34" +
+    "2020143325669;0;-0.642787609686539;-0.262002630229385;0.719846310392954;0;0;0;0;" +
+    "1";
+            this.chartControl2.Diagram = xyDiagram3D1;
+            this.chartControl2.Legend.Name = "Default Legend";
+            this.chartControl2.Location = new System.Drawing.Point(210, 157);
+            this.chartControl2.Name = "chartControl2";
+            series3.Name = "Series 1";
+            series3.Points.AddRange(new DevExpress.XtraCharts.SeriesPoint[] {
+            seriesPoint1,
+            seriesPoint2,
+            seriesPoint3});
+            sideBySideBar3DSeriesView1.Transparency = ((byte)(135));
+            series3.View = sideBySideBar3DSeriesView1;
+            this.chartControl2.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
+        series3};
+            this.chartControl2.SeriesTemplate.View = sideBySideBar3DSeriesView2;
+            this.chartControl2.Size = new System.Drawing.Size(477, 335);
+            this.chartControl2.TabIndex = 0;
             // 
             // Form1
             // 
@@ -623,6 +671,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.buttonEdit1.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.navigationPane1)).EndInit();
             this.navigationPane1.ResumeLayout(false);
+            this.navigationPage4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram3D1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBar3DSeriesView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBar3DSeriesView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartControl2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -676,6 +730,8 @@
         private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
         private DevExpress.XtraCharts.ChartControl chartControl1;
         private DevExpress.XtraEditors.SimpleButton gyro_calib_Button1;
+        private DevExpress.XtraBars.Navigation.NavigationPage navigationPage4;
+        private DevExpress.XtraCharts.ChartControl chartControl2;
     }
 
 }

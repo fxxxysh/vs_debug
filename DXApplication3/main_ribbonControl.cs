@@ -69,7 +69,7 @@ namespace DXApplication3
 
                 for (int i = 0; i < 10; i++)
                 {
-                    _check[i] = checkedListBoxControl2.Items[i].CheckState;
+                  //  _check[i] = checkedListBoxControl2.Items[i].CheckState;
                 }
 
                 Thread.Sleep(4000);
