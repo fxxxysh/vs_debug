@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace DXApplication4
 {
-    public partial class Form2 : Form
+    public partial class Form2 : DevExpress.XtraBars.Ribbon.RibbonForm
     {
         public Form2()
         {
