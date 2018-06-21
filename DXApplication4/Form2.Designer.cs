@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
-            DevExpress.Utils.SuperToolTip superToolTip1 = new DevExpress.Utils.SuperToolTip();
-            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem1 = new DevExpress.Utils.ToolTipTitleItem();
+            DevExpress.Utils.SuperToolTip superToolTip2 = new DevExpress.Utils.SuperToolTip();
+            DevExpress.Utils.ToolTipTitleItem toolTipTitleItem2 = new DevExpress.Utils.ToolTipTitleItem();
             this.nav_control = new DevExpress.XtraNavBar.NavBarGroup();
             this.ahrs_navBarItem = new DevExpress.XtraNavBar.NavBarItem();
             this.mot_navBarItem = new DevExpress.XtraNavBar.NavBarItem();
@@ -46,6 +46,10 @@
             this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
             this.gyro_data_groupControl = new DevExpress.XtraEditors.GroupControl();
             this.gyro_calib_groupControl = new DevExpress.XtraEditors.GroupControl();
+            this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
             this.navigationPage6 = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.navigationPage7 = new DevExpress.XtraBars.Navigation.NavigationPage();
@@ -94,10 +98,14 @@
             this.nav_data = new DevExpress.XtraNavBar.NavBarGroup();
             this.kit_nav_bar = new DevExpress.XtraNavBar.NavBarControl();
             this.plot_imageList = new System.Windows.Forms.ImageList(this.components);
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
-            this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
+            this.labelControl5 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl4 = new DevExpress.XtraEditors.LabelControl();
+            this.labelControl6 = new DevExpress.XtraEditors.LabelControl();
+            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textEdit2 = new DevExpress.XtraEditors.TextEdit();
             this.nav_data_page.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kit_nav_frame)).BeginInit();
             this.kit_nav_frame.SuspendLayout();
@@ -108,6 +116,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gyro_data_groupControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gyro_calib_groupControl)).BeginInit();
             this.gyro_calib_groupControl.SuspendLayout();
+            this.xtraTabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.software_version_edit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hardware_version_edit)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kit_sys_id_edit)).BeginInit();
@@ -127,6 +136,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.in_nav_params)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kit_nav_bar)).BeginInit();
             this.kit_nav_bar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // nav_control
@@ -261,10 +274,43 @@
             this.gyro_calib_groupControl.TabIndex = 0;
             this.gyro_calib_groupControl.Text = "控制";
             // 
+            // simpleButton7
+            // 
+            this.simpleButton7.Location = new System.Drawing.Point(86, 65);
+            this.simpleButton7.Name = "simpleButton7";
+            this.simpleButton7.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton7.TabIndex = 4;
+            this.simpleButton7.Text = "获取数据";
+            // 
+            // labelControl3
+            // 
+            this.labelControl3.Location = new System.Drawing.Point(11, 69);
+            this.labelControl3.Name = "labelControl3";
+            this.labelControl3.Size = new System.Drawing.Size(60, 14);
+            this.labelControl3.TabIndex = 3;
+            this.labelControl3.Text = "正交补偿：";
+            // 
+            // simpleButton4
+            // 
+            this.simpleButton4.Location = new System.Drawing.Point(86, 29);
+            this.simpleButton4.Name = "simpleButton4";
+            this.simpleButton4.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton4.TabIndex = 2;
+            this.simpleButton4.Text = "开始";
+            // 
+            // labelControl2
+            // 
+            this.labelControl2.Location = new System.Drawing.Point(11, 33);
+            this.labelControl2.Name = "labelControl2";
+            this.labelControl2.Size = new System.Drawing.Size(60, 14);
+            this.labelControl2.TabIndex = 0;
+            this.labelControl2.Text = "零偏补偿：";
+            // 
             // xtraTabPage2
             // 
+            this.xtraTabPage2.Controls.Add(this.groupControl1);
             this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(621, 337);
+            this.xtraTabPage2.Size = new System.Drawing.Size(759, 414);
             this.xtraTabPage2.Text = "加计校准";
             // 
             // navigationPage6
@@ -426,9 +472,9 @@
             // 
             this.connect_status.Id = 12;
             this.connect_status.Name = "connect_status";
-            toolTipTitleItem1.Text = "状态";
-            superToolTip1.Items.Add(toolTipTitleItem1);
-            this.connect_status.SuperTip = superToolTip1;
+            toolTipTitleItem2.Text = "状态";
+            superToolTip2.Items.Add(toolTipTitleItem2);
+            this.connect_status.SuperTip = superToolTip2;
             // 
             // kit_hide
             // 
@@ -594,7 +640,7 @@
             this.navBarGroupControlContainer6.Controls.Add(this.panelControl2);
             this.navBarGroupControlContainer6.Controls.Add(this.in_nav_params);
             this.navBarGroupControlContainer6.Name = "navBarGroupControlContainer6";
-            this.navBarGroupControlContainer6.Size = new System.Drawing.Size(257, 422);
+            this.navBarGroupControlContainer6.Size = new System.Drawing.Size(257, 362);
             this.navBarGroupControlContainer6.TabIndex = 2;
             // 
             // panelControl2
@@ -605,7 +651,7 @@
             this.panelControl2.Controls.Add(this.simpleButton5);
             this.panelControl2.Controls.Add(this.simpleButton3);
             this.panelControl2.Cursor = System.Windows.Forms.Cursors.Default;
-            this.panelControl2.Location = new System.Drawing.Point(-1, 341);
+            this.panelControl2.Location = new System.Drawing.Point(-1, 281);
             this.panelControl2.Margin = new System.Windows.Forms.Padding(0);
             this.panelControl2.Name = "panelControl2";
             this.panelControl2.Size = new System.Drawing.Size(259, 82);
@@ -652,7 +698,7 @@
             this.in_nav_params.Margin = new System.Windows.Forms.Padding(0);
             this.in_nav_params.Name = "in_nav_params";
             this.in_nav_params.OptionsNavPane.ExpandedWidth = 257;
-            this.in_nav_params.Size = new System.Drawing.Size(257, 341);
+            this.in_nav_params.Size = new System.Drawing.Size(257, 281);
             this.in_nav_params.TabIndex = 6;
             this.in_nav_params.Text = "navBarControl2";
             // 
@@ -717,37 +763,77 @@
             this.plot_imageList.Images.SetKeyName(12, "");
             this.plot_imageList.Images.SetKeyName(13, "");
             // 
-            // labelControl2
+            // groupControl1
             // 
-            this.labelControl2.Location = new System.Drawing.Point(11, 33);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(60, 14);
-            this.labelControl2.TabIndex = 0;
-            this.labelControl2.Text = "零偏补偿：";
+            this.groupControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupControl1.Controls.Add(this.textEdit2);
+            this.groupControl1.Controls.Add(this.textBox1);
+            this.groupControl1.Controls.Add(this.textEdit1);
+            this.groupControl1.Controls.Add(this.labelControl6);
+            this.groupControl1.Controls.Add(this.simpleButton8);
+            this.groupControl1.Controls.Add(this.labelControl4);
+            this.groupControl1.Controls.Add(this.labelControl5);
+            this.groupControl1.Location = new System.Drawing.Point(5, 3);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.Size = new System.Drawing.Size(754, 173);
+            this.groupControl1.TabIndex = 1;
+            this.groupControl1.Text = "控制";
             // 
-            // simpleButton4
+            // simpleButton8
             // 
-            this.simpleButton4.Location = new System.Drawing.Point(86, 29);
-            this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton4.TabIndex = 2;
-            this.simpleButton4.Text = "开始";
+            this.simpleButton8.Location = new System.Drawing.Point(77, 30);
+            this.simpleButton8.Name = "simpleButton8";
+            this.simpleButton8.Size = new System.Drawing.Size(75, 23);
+            this.simpleButton8.TabIndex = 4;
+            this.simpleButton8.Text = "开始";
             // 
-            // simpleButton7
+            // labelControl5
             // 
-            this.simpleButton7.Location = new System.Drawing.Point(86, 65);
-            this.simpleButton7.Name = "simpleButton7";
-            this.simpleButton7.Size = new System.Drawing.Size(75, 23);
-            this.simpleButton7.TabIndex = 4;
-            this.simpleButton7.Text = "获取数据";
+            this.labelControl5.Location = new System.Drawing.Point(11, 33);
+            this.labelControl5.Name = "labelControl5";
+            this.labelControl5.Size = new System.Drawing.Size(60, 14);
+            this.labelControl5.TabIndex = 0;
+            this.labelControl5.Text = "六面校准：";
             // 
-            // labelControl3
+            // labelControl4
             // 
-            this.labelControl3.Location = new System.Drawing.Point(11, 69);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(60, 14);
-            this.labelControl3.TabIndex = 3;
-            this.labelControl3.Text = "正交补偿：";
+            this.labelControl4.Location = new System.Drawing.Point(98, 85);
+            this.labelControl4.Name = "labelControl4";
+            this.labelControl4.Size = new System.Drawing.Size(43, 14);
+            this.labelControl4.TabIndex = 3;
+            this.labelControl4.Text = "获取X正";
+            // 
+            // labelControl6
+            // 
+            this.labelControl6.Location = new System.Drawing.Point(11, 85);
+            this.labelControl6.Name = "labelControl6";
+            this.labelControl6.Size = new System.Drawing.Size(70, 14);
+            this.labelControl6.TabIndex = 5;
+            this.labelControl6.Text = "labelControl6";
+            // 
+            // textEdit1
+            // 
+            this.textEdit1.Location = new System.Drawing.Point(77, 127);
+            this.textEdit1.MenuManager = this.kit_ribbon;
+            this.textEdit1.Name = "textEdit1";
+            this.textEdit1.Size = new System.Drawing.Size(100, 20);
+            this.textEdit1.TabIndex = 6;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(221, 61);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 7;
+            // 
+            // textEdit2
+            // 
+            this.textEdit2.Location = new System.Drawing.Point(221, 117);
+            this.textEdit2.MenuManager = this.kit_ribbon;
+            this.textEdit2.Name = "textEdit2";
+            this.textEdit2.Size = new System.Drawing.Size(100, 20);
+            this.textEdit2.TabIndex = 8;
             // 
             // Form2
             // 
@@ -772,6 +858,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.gyro_calib_groupControl)).EndInit();
             this.gyro_calib_groupControl.ResumeLayout(false);
             this.gyro_calib_groupControl.PerformLayout();
+            this.xtraTabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.software_version_edit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hardware_version_edit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kit_sys_id_edit)).EndInit();
@@ -791,6 +878,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.in_nav_params)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kit_nav_bar)).EndInit();
             this.kit_nav_bar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
+            this.groupControl1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -864,5 +956,13 @@
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.SimpleButton simpleButton4;
         private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.GroupControl groupControl1;
+        private DevExpress.XtraEditors.TextEdit textEdit2;
+        private System.Windows.Forms.TextBox textBox1;
+        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.LabelControl labelControl6;
+        private DevExpress.XtraEditors.SimpleButton simpleButton8;
+        private DevExpress.XtraEditors.LabelControl labelControl4;
+        private DevExpress.XtraEditors.LabelControl labelControl5;
     }
 }
